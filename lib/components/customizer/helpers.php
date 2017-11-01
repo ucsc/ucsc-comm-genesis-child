@@ -2,13 +2,13 @@
 /**
  * Customizer helpers.
  *
- * @package     KnowTheCode\Developers
+ * @package     Blackbird\Developers
  * @since       1.0.0
- * @author      hellofromTonya
- * @link        https://knowthecode.io
+ * @author      Blackbird Consulting
+ * @link        https://www.blackbirdconsult.com
  * @license     GNU General Public License 2.0+
  */
-namespace KnowTheCode\Developers\Customizer;
+namespace Blackbird\Developers\Customizer;
 
 /**
  * Get the settings prefix.

@@ -2,13 +2,13 @@
 /**
  * Adds the CSS from the Customizer options.
  *
- * @package     KnowTheCode\Developers
+ * @package     Blackbird\Developers
  * @since       1.0.0
- * @author      hellofromTonya
- * @link        https://knowthecode.io
+ * @author      Blackbird Consulting
+ * @link        https://www.blackbirdconsult.com
  * @license     GNU General Public License 2.0+
  */
-namespace KnowTheCode\Developers\Customizer;
+namespace Blackbird\Developers\Customizer;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\build_inline_css_from_customizer_settings' );
 /**

@@ -2,13 +2,13 @@
 /**
  * Asset loader handler.
  *
- * @package     KnowTheCode\Developers
+ * @package     Blackbird\Developers
  * @since       1.0.0
- * @author      hellofromTonya
- * @link        https://knowthecode.io
+ * @author      Blackbird Consulting
+ * @link        https://www.blackbirdconsult.com
  * @license     GNU General Public License 2.0+
  */
-namespace KnowTheCode\Developers;
+namespace Blackbird\Developers;
 
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**

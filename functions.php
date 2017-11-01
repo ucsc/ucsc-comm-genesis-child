@@ -2,13 +2,13 @@
 /**
  * Developer's Theme
  *
- * @package     KnowTheCode\Developers
+ * @package     Blackbird\Developers
  * @since       1.0.2
- * @author      hellofromTonya
- * @link        https://knowthecode.io
+ * @author      Blackbird Consulting
+ * @link        https://www.blackbirdconsult.com
  * @license     GNU General Public License 2.0+
  */
-namespace KnowTheCode\Developers;
+namespace Blackbird\Developers;
 
 include_once( 'lib/init.php' );
 
