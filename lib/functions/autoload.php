@@ -10,13 +10,13 @@
  * go into a plugin and not in your theme.  If you put them here, I want you to picture me shaking my head back and
  * forth.  Come on....I taught you better than that.
  *
- * @package     Blackbird\Developers
+ * @package     UCSC\Communications
  * @since       1.0.0
  * @author      Blackbird Consulting
  * @link        https://www.blackbirdconsult.com
  * @license     GNU General Public License 2.0+
  */
-namespace Blackbird\Developers;
+namespace UCSC\Communications;
 
 /**
  * Loads non admin files.
@@ -30,6 +30,10 @@ function load_nonadmin_files() {
 		'setup.php',
 		'components/customizer/css-handler.php',
 		'components/customizer/helpers.php',
+		'components/backend/post-types.php',
+		'components/backend/shortcodes.php',
+		'components/backend/sidebars.php',
+		'components/backend/taxonomies.php',
 		'functions/formatting.php',
 		'functions/load-assets.php',
 		'functions/markup.php',
@@ -37,6 +41,7 @@ function load_nonadmin_files() {
 		'structure/comments.php',
 //		'structure/footer.php',
 //		'structure/header.php',
+		'structure/before-header.php',
 		'structure/menu.php',
 		'structure/post.php',
 //		'structure/sidebar.php',
