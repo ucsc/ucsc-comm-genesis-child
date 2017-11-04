@@ -22,8 +22,8 @@ function bb_add_top_row(){
 	
 	$custom_title = '<a href="/"><img class="header-logo" src="'.$logo.'" alt="UCSC Logo" ></a>';
 	echo '<div class="page-top">';
-	echo '<div class="top-row">';
-	echo '<div class="top-row-wrap">';
+	echo '<div class="top-row wrap">';
+	
 	echo '<div class="top-row-left">';
 	echo '<div class="top-row-left-wrap">';
 	echo $custom_title;
@@ -42,7 +42,7 @@ function bb_add_top_row(){
 	) );
 	
 	echo '</div>';
-	echo '</div>';
+	
 	echo '</div>';
     echo '</div>';
     }

@@ -62,6 +62,14 @@ function adds_theme_supports() {
 			'search-form',
 			'skip-links'
 		),
+		'genesis-structural-wraps'		=> array (
+			'header',
+			'nav',
+			'subnav',
+			'site-inner',
+			'footer-widgets',
+			'footer'
+		),
 		'genesis-responsive-viewport'     => null,
 		'custom-header'                   => array(
 			'width'           => 600,
@@ -84,6 +92,7 @@ function adds_theme_supports() {
 	}
 }
 
+
 /**
  * Adds new image sizes.
  *
@@ -96,6 +105,11 @@ function adds_new_image_sizes() {
 		'featured-image' => array(
 			'width'  => 720,
 			'height' => 400,
+			'crop'   => true,
+		),
+		'subpage-featured-image' => array(
+			'width'  => 200,
+			'height' => 200,
 			'crop'   => true,
 		),
 	);
@@ -160,3 +174,23 @@ function get_theme_settings_defaults() {
 		'site_layout'               => 'content-sidebar',
 	);
 }
+
+/**
+ * add editor styles
+ *
+ * @since 1.0.0
+ *
+ * @return array
+ */
+
+ add_editor_style('editor-style.css');
+
+ /**
+ * add Page excerpts
+ *
+ * @since 1.0.0
+ *
+ * @return array
+ */
+
+add_post_type_support( 'page', 'excerpt' );

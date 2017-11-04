@@ -35,3 +35,17 @@ function setup_author_box_gravatar_size( $size ) {
 
 	return 90;
 }
+
+/* =BEGIN: Add Class to first Paragraph in WordPress the_content();
+    Source: http://webdevbits.com/wordpress/add-class-to-first-paragraph-in-wordpress-the_content/
+   ---------------------------------------------------------------------------------------------------- */
+   function bb_first_paragraph($content){
+	// Testing to see if the content is a Page or Custom Post Type of school, if so, display the text normally (without the class = intro).
+	if ( is_page() ) {
+	  
+	  return preg_replace('/<p([^>]+)?>/', '<p$1 class="intro">', $content, 1);
+	} else {
+		return preg_replace('/<p([^>]+)?>/', '<p$1>', $content, 1);	
+	}
+  }
+  add_filter('the_content', __NAMESPACE__ . '\bb_first_paragraph');

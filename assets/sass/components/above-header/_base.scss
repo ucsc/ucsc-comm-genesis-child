@@ -1,23 +1,23 @@
 /*Top Row*/
 
 .page-top {
-    background-color: $ucsc--dark-blue;
-    position: fixed;
+    background-color: $ucsc--primary-blue;
+    //position: fixed;
     text-align: initial;
-    right: 0;
-    left: 0;
-    top: 0;
-    z-index: 100;
-    .admin-bar & {
-        top: 32px;
-    }
+    //right: 0;
+    //left: 0;
+    //top: 0;
+    // z-index: 100;
+    // .admin-bar & {
+    //     top: 32px;
+    // }
     .top-row {
         margin-top: 0;
         margin-bottom: 0;
-        max-width: $max-width;
+        //max-width: $max-width;
         margin: 0 auto;
         overflow: auto;
-        @include media($breakpoint__screen-size--larger) {
+        /* @include media($breakpoint__screen-size--larger) {
             max-width: $max-width--larger-screen;
         }
         @include media($breakpoint__screen-size--large) {
@@ -25,7 +25,7 @@
         }
         @include media($breakpoint__screen-size--medium) {
             max-width: $max-width--medium-screen;
-        }
+        }*/
     }
     .menu-top-row-menu-container {
         float: right;
@@ -66,6 +66,7 @@
                 }
                 a {
                     color: $white;
+                    text-decoration: none;
                 }
             }
         }
@@ -73,7 +74,7 @@
 }
 
 .top-row-left {
-    padding: 15px 0;
+    padding: 10px 0;
     float: left;
     @include media($breakpoint__screen-size--medium) {
         width: 100%;
@@ -85,8 +86,11 @@
 }
 
 .top-row-right {
-    padding: 15px 0 0;
+    padding: 10px 0 0;
     float: right;
+    .widget-area {
+        margin-bottom: 10px;
+    }
     @include media($breakpoint__screen-size--medium) {
         width: 100%;
         display: flex;

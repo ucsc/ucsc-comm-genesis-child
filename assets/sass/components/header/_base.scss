@@ -3,11 +3,12 @@
 //==============================
 .site-header {
     background-color: $site-header--background-color;
-    margin-top: 66px;
+    //margin-top: 57px;
     >.wrap {
         padding: 15px 0 0;
     }
-    @media only screen and (max-width: 1023px) {
+    @include media($breakpoint__screen-size--medium) {
+        //margin-top: 100px;
         .wrap {
             padding-left: 5%;
             padding-right: 5%;

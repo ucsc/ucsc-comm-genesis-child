@@ -4,7 +4,7 @@ html {
 }
 
 body {
-    background-color: $body--background-color;
+    //background-color: $body--background-color;
     color: $base__color;
     font-family: $base--font-family;
     @include rem( font-size, $base--font-size);

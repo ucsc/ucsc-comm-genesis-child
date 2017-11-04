@@ -6,21 +6,21 @@ $gray--lightestest: #ccc;
 $gray--lightest: #ddd;
 $gray--lighter: #eee;
 $gray--light: #777;
-$gray: #333;
+$gray: #555;
 $red: #c3251d;
-$ucsc--dark-blue: #003c6c;
+$ucsc--primary-blue: #003c6c;
+$ucsc--primary-yellow: #fdc700;
 $ucsc--light-blue: #006aad;
 $ucsc--lighter-blue: #13a5dc;
 $ucsc--orange: #f29813;
 $ucsc--light-orange: #da216d;
-$ucsc--lighter-orange: #fdc700;
 $ucsc--green: #93c02d;
 $ucsc--blue-green: #007988;
 $ucsc--magenta: #da216d;
 //
 // Color Configuration
 //===========================
-$link--color: $red;
+$link--color: $ucsc--primary-blue;
 $link--hover-color: $gray;
 // Elements
 $base--color: $gray;

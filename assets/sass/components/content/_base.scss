@@ -4,9 +4,9 @@
 .entry {
     background-color: $entry--background-color;
     margin-bottom: 40px;
-    padding: 70px 0;
+    padding: 15px 0;
     @media only screen and (max-width: 860px) {
-        padding: 30px;
+        //padding: 30px;
         margin-bottom: 5%;
     }
 }
