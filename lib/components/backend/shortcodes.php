@@ -17,7 +17,7 @@ return 'Hello!';
 
 }
 
-add_shortcode('say-hello', __NAMESPACE__ . '\say_hello');
+//add_shortcode('say-hello', __NAMESPACE__ . '\say_hello');
 
 function ucsc_social_sharing(){
     ?>

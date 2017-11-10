@@ -1,13 +1,33 @@
 /* ## Site Custom
 --------------------------------------------- */
 
+
+/* ### Cllear
+--------------------------------------------- */
+
 .clear {
     clear: both;
 }
 
+
+/* ### Color Swatches
+--------------------------------------------- */
+
 .color-swatch {
-    width: 175px;
+    width: 250px;
     height: 175px;
+    position: relative;
+}
+
+.color-swatch-inner {
+    position: absolute;
+    bottom: 2px;
+    left: 10px;
+    p {
+        a {
+            color: $white;
+        }
+    }
 }
 
 .primary-blue {
@@ -16,4 +36,48 @@
 
 .primary-yellow {
     background-color: $ucsc--primary-yellow;
+}
+
+.light-blue {
+    background-color: $ucsc--light-blue;
+}
+
+.lighter-blue {
+    background-color: $ucsc--lighter-blue;
+}
+
+.orange {
+    background-color: $ucsc--orange;
+}
+
+.light-orange {
+    background-color: $ucsc--light-orange;
+}
+
+.green {
+    background-color: $ucsc--green;
+}
+
+.blue-green {
+    background-color: $ucsc--blue-green;
+}
+
+.magenta {
+    background-color: $ucsc--magenta;
+}
+
+
+/* ### Social Media Directory
+--------------------------------------------- */
+
+.social-directory-row {
+    border-bottom: 1px solid $gray--lightestest;
+    width: 100%;
+    float: left;
+    margin-bottom: 10px;
+    padding: 5px 0;
+    p {
+        margin: 0;
+        color: $black;
+    }
 }

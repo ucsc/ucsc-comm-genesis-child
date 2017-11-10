@@ -3,7 +3,11 @@
 //======================
 .entry-title {
     @include rem( font-size, $entry-title--font-size);
-    color: $white;
+    margin-bottom: 0;
+    .page-title & {
+        color: $white;
+        font-weight: 400;
+    }
     a {
         color: $entry-title--link-color;
         text-decoration: none;

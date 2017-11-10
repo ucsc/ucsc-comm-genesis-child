@@ -34,6 +34,7 @@ function load_nonadmin_files() {
 		'components/backend/shortcodes.php',
 		'components/backend/sidebars.php',
 		'components/backend/taxonomies.php',
+		'components/backend/custom-metaboxes.php',
 		'functions/formatting.php',
 		'functions/load-assets.php',
 		'functions/markup.php',

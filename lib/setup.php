@@ -194,3 +194,12 @@ function get_theme_settings_defaults() {
  */
 
 add_post_type_support( 'page', 'excerpt' );
+
+ /**
+ * add WP Thickbox
+ *
+ * @since 1.0.0
+ *
+ * @return array
+ */
+add_thickbox();
