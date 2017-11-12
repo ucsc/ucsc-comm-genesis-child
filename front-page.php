@@ -12,11 +12,8 @@
  //* Force full-width-content layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
-remove_action( 'genesis_loop', 'genesis_do_loop' );
-add_action( 'genesis_loop',  __NAMESPACE__ .'\bb_front_page_content_loop' );
 
-function bb_front_page_content_loop() {
-    echo "Hello World";
-}
+//* Add Content
+include CHILD_THEME_DIR.'/lib/template-parts/home-page-content.php';
 
  genesis();

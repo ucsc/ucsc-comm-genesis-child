@@ -3,17 +3,13 @@
 remove_action( 'genesis_loop', 'genesis_do_loop' );
 add_action( 'genesis_loop',  __NAMESPACE__ .'\bb_child_page_loop' );
 
-function bb_front_page_content_loop() {
-    echo "Hello World";
-}
 
 /**
  * Child Page Loop
  */
     
 function bb_child_page_loop (){
-    $id = get_the_ID();
-    
+    $id = get_the_ID();    
     $pageContent = get_the_content();
     $pageContentFormatted = apply_filters('the_content', $pageContent);
     $args = array(

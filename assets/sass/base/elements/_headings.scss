@@ -12,6 +12,11 @@ h6 {
     line-height: $headings--line-height;
     margin: 0 0 10px;
     color: $ucsc--primary-blue;
+    .content-inner-sidebar & {
+        font-family: $font-family--source-sans-pro;
+        text-transform: uppercase;
+        color: $ucsc--orange;
+    }
 }
 
 h1 {
