@@ -1,0 +1,23 @@
+// Column Widths
+//===================
+//
+//Constants
+//===================
+$one-half-total: 51.28205128%;
+$one-third-total: 34.18803419;
+$two-thirds-total: 68.37606838%;
+$one-fourth-total: 25.64102564%;
+$three-fourths-total: 76.92307692%;
+$one-sixth-total: 17.09401709%;
+$five-sixths-total: 85.47008547%;
+//
+//Variable Widths
+//==================
+$column-margin-left: 2.564102564102564%; //original: 2.564102564102564%
+$one-half-column: $one-half-total - $column-margin-left; //original: 48.717948717948715%
+$one-third-column: $one-third-total - $column-margin-left; //original: 31.623931623931625%
+$two-thirds-column: $two-thirds-total - $column-margin-left; //original: 65.81196581196582%
+$one-fourth-column: $one-fourth-total - $column-margin-left; //original: 23.076923076923077%
+$three-fourths-column: $three-fourths-total - $column-margin-left; //original: 74.35897435897436%
+$one-sixth-column: $one-sixth-total - $column-margin-left; //original: 14.52991452991453%
+$five-sixths-column: $five-sixths-total - $column-margin-left; //original: 82.90598290598291%

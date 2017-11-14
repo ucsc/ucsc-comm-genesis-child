@@ -5,4 +5,8 @@
     background-color: $primary-nav--background-color;
     @include box-shadow(0 5px 5px -5px rgba(0, 0, 0, .2));
     //box-shadow: 0 5px 5px -5px rgba(0, 0, 0, .2);
+    .hero-container & {
+        background-color: none;
+        color: $white;
+    }
 }
