@@ -13,7 +13,7 @@ function bb_child_page_loop (){
     $pageContent = get_the_content();
     $pageContentFormatted = apply_filters('the_content', $pageContent);
     $args = array(
-        'post_parent' => $id,//1079,
+        'post_parent' => $id,
 		'post_type' => 'page',
 		'posts_per_page' => -1,
         'orderby' => 'menu_order'
@@ -22,7 +22,6 @@ function bb_child_page_loop (){
     $child_query = new \WP_Query( $args );
     ?><article <?php post_class()?>><?php;
     echo '<div class="entry-content" itemprop="text">';
-    //echo '<p class="intro">'.$overview.'</p>';
     echo $pageContentFormatted;
     echo '<div class="two-thirds first">'; 
     

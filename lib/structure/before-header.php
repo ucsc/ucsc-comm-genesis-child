@@ -40,9 +40,28 @@ function bb_add_top_row(){
         
 
 	) );
+	// wp_nav_menu (array(
+	// 	'theme_location'  => 'mobile-menu',
+	// 	'menu'            => '',
+	// 	'container'       => 'nav',
+	// 	'container_class' => 'nav-primary nav-mobile',
+	// 	'container_id'    => '',
+	// 	'menu_class'      => 'menu genesis-nav-menu menu-primary menu-mobile responsive-menu',
+	// 	'menu_id'         => '',
+	// 	'echo'            => true,
+	// 	'fallback_cb'     => 'wp_page_menu',
+	// 	'before'          => '',
+	// 	'after'           => '',
+	// 	'link_before'     => '',
+	// 	'link_after'      => '',
+	// 	'items_wrap'      => '<div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
+	// 	'depth'           => 0,
+	// 	'walker'          => ''
+	// ));
 	
 	echo '</div>';
 	
 	echo '</div>';
     echo '</div>';
-    }
+	}
+	

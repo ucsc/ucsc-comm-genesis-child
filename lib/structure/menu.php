@@ -44,3 +44,20 @@ function setup_secondary_menu_args( array $args ) {
 
 	return $args;
 }
+
+/**
+ * Create a new menu location for Mobile
+ *
+ * @since 1.0.0
+ *
+ * @param array $args
+ *
+ * @return array
+ */
+
+add_action( 'after_setup_theme', __NAMESPACE__ . '\bb_register_mobile_menu' );
+function bb_register_mobile_menu() {
+	register_nav_menu( 'mobile-menu', __( 'Mobile Menu' ) );
+}
+
+
