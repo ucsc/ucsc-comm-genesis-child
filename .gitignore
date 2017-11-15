@@ -12,3 +12,7 @@ tests/mocks/env/
 /assets/vendor/
 
 .idea/
+
+# Rsync exclude file
+rsync-exclude.txt
+synctheme
