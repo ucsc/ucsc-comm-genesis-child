@@ -57,3 +57,4 @@ function bb_child_page_loop (){
     echo '</div>';
     echo '</article>';
    }
+   ?>
