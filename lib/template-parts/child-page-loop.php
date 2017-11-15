@@ -47,7 +47,6 @@ function bb_child_page_loop (){
 	wp_reset_postdata();
 	echo'</div>';
 	echo '<div class="one-third">';
-    //echo '<p>fjdasfkjasfladkjf;ladkfj;ladkfj;lads</p>';
     if ( is_active_sidebar( 'sidebar' ) ) :
 	echo '<ul id="sidebar">';
 		dynamic_sidebar( 'sidebar' );
@@ -57,4 +56,3 @@ function bb_child_page_loop (){
     echo '</div>';
     echo '</article>';
    }
-   ?>
