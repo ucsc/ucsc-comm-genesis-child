@@ -20,7 +20,7 @@ function bb_child_page_loop (){
     );
     
     $child_query = new \WP_Query( $args );
-    ?><article <?php post_class()?>><?php;
+    ?><article <?php post_class()?>><?php
     echo '<div class="entry-content" itemprop="text">';
     echo $pageContentFormatted;
     echo '<div class="two-thirds first">'; 

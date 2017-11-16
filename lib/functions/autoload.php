@@ -37,7 +37,7 @@ function load_nonadmin_files() {
 		'components/backend/custom-metaboxes.php',
 		'functions/formatting.php',
 		'functions/load-assets.php',
-		'functions/markup.php',
+//		'functions/markup.php',
 //		'structure/archive.php',
 		'structure/comments.php',
 		'structure/footer.php',

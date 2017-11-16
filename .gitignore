@@ -4,6 +4,9 @@ phpunit.xml
 /bin
 tests/mocks/env/
 
+# Visual Studio Code
+.vscode/
+
 # Sass cache
 .sass-cache/
 
@@ -13,6 +16,8 @@ tests/mocks/env/
 
 .idea/
 
-# Rsync exclude file
+# Rsync exclude file and scripts
 rsync-exclude.txt
 synctheme
+wpcontent-from
+wpcontent-to
