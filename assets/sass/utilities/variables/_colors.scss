@@ -51,10 +51,11 @@ $site-title--link-color: $gray;
 //
 // Navigation
 //============================
-$nav--link-color: $gray;
-$nav--hover-color: $red;
+$nav--link-color: $ucsc--primary-blue;
+$nav--hover-color: $ucsc--light-blue;
 $submenu--border-color: $gray--lighter;
 $submenu--link-background-color: $white;
+$submenu--link-hover-background-color: $ucsc--primary-blue;
 $primary-nav--background-color: $white;
 $primary-nav--border-color: $gray--lighter;
 $primary-nav--link-color: $nav--link-color;
@@ -63,10 +64,10 @@ $secondary-nav--border-color: $gray--lighter;
 $secondary-nav--link-color: $nav--link-color;
 $mobile-nav--border-color: $gray--lighter;
 $js-nav--background-color: $white;
-$js-nav--hover-color: $black;
-$js-nav--focus-color: $red;
+$js-nav--hover-color: $ucsc--primary-blue;
+$js-nav--focus-color: $ucsc--primary-blue;
 $nav-toggle--background-color: $white;
-$nav-toggle--text-color: $gray--lighter;
+$nav-toggle--text-color: $ucsc--primary-blue;
 $archive-pagination--background-color: $ucsc--lighter-blue;
 $archive-pagination--text-color: $white;
 $archive-pagination--hover-background-color: $ucsc--green;
