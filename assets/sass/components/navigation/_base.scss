@@ -24,6 +24,12 @@
         padding-bottom: 0;
         text-align: left;
     }
+    .menu-item-has-children>a:after {
+        content: "\f0d7";
+        font-family: FontAwesome;
+        color: $ucsc--green;
+        margin: 0 0 0 5px;
+    }
     a {
         color: $nav--link-color;
         text-decoration: none;
@@ -36,7 +42,7 @@
     .sub-menu .current-menu-item>a:hover,
     .sub-menu .current-menu-item>a:focus {
         color: $nav--hover-color;
-        text-decoration: underline;
+        text-decoration: none;
     }
     .sub-menu {
         border-top: 1px solid $submenu--border-color;
