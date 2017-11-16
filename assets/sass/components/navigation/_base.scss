@@ -2,7 +2,7 @@
 // Base navigation styles
 //==========================
 .nav-primary #menu-item-1350 a {
-    padding-left: 0;
+    padding: 20px 20px 20px 0;
 }
 
 .genesis-nav-menu {
@@ -59,7 +59,7 @@
             //border: 1px solid $submenu--border-color;
             border-top: 0;
             @include rem( font-size, $submenu--font-size);
-            padding: 20px;
+            padding: 20px!important;
             position: relative;
             width: 200px;
             word-wrap: break-word;
