@@ -40,7 +40,7 @@ function bb_child_page_loop (){
 		echo '</div>';
 		echo '<div class="three-fourths">';   
         echo '<h3><a href="'.$pagePermalink.'" rel="bookmark" title="'.$pageTitle.'">'.$pageTitle.'</a></h3>';
-        echo $pageExcerpt;
+        echo '<p class="excerpt">'.$pageExcerpt.'</p>';
         echo'</div>';
     endwhile; 
     

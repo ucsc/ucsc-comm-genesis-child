@@ -10,6 +10,7 @@ body {
     @include rem( font-size, $base--font-size);
     -webkit-font-smoothing: antialiased;
     font-weight: 400;
+    text-rendering: optimizeLegibility;
     line-height: $base--line-height;
     margin: 0;
     @include media( $breakpoint__screen-size--small) {

@@ -1,7 +1,7 @@
 // Base Colors
 //===================
 $white: #fff;
-$black: #000;
+$black: #222;
 $gray--lightestest: #ccc;
 $gray--lightest: #ddd;
 $gray--lighter: #eee;
@@ -23,7 +23,7 @@ $ucsc--magenta: #da216d;
 $link--color: $ucsc--primary-blue;
 $link--hover-color: $gray;
 // Elements
-$base--color: $gray;
+$base--color: $black;
 $body--background-color: $gray--lighter;
 $hr--border-color: $gray--lighter;
 // Form Elements
@@ -47,7 +47,7 @@ $skip-link--focus-outline-color: $gray;
 // Header
 //======================
 $site-header--background-color: $white;
-$site-title--link-color: $gray;
+$site-title--link-color: $black;
 //
 // Navigation
 //============================

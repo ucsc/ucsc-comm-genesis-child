@@ -2,7 +2,7 @@
 // Site Title
 //========================
 .site-title {
-    font-family: $font-family--roboto-slab;
+    font-family: $base--font-family;
     @include rem( font-size, $site-title--font-size);
     font-weight: 400;
     line-height: 1.2;

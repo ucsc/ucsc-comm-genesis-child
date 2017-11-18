@@ -22,10 +22,10 @@
         color: $entry-content__code--color;
     }
     .intro {
-        font-family: $font-family--roboto-slab;
+        //font-family: $font-family--roboto-slab;
         @include rem( font-size, $intro--font-size);
-        font-weight: 400;
-        line-height: 1.3;
-        //color: $ucsc--light-blue;
+        font-weight: 600;
+        line-height: 1.25;
+        color: $ucsc--primary-blue;
     }
 }
