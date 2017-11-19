@@ -4,6 +4,10 @@ phpunit.xml
 /bin
 tests/mocks/env/
 
+# Style sheets
+style.css
+style.min.css
+
 # Visual Studio Code
 .vscode/
 
