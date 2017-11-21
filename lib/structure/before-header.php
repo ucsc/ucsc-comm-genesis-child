@@ -37,9 +37,7 @@ function bb_add_top_row(){
         'container' => 'nav',
         'container_class' => 'menu-top-row-menu-container',
 	) );
-	echo '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#genesis-nav-primary">';
-	echo '<i class="fa fa-bars" aria-hidden="true" ></i>';
-	echo '</button>';
+	
 	// wp_nav_menu (array(
 	// 	'theme_location'  => 'mobile-menu',
 	// 	'menu'            => '',
@@ -60,7 +58,9 @@ function bb_add_top_row(){
 	// ));
 	
 	echo '</div>';
-	
+	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
+	echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
+	echo '</button>';
 	echo '</div>';
     echo '</div>';
 	}
