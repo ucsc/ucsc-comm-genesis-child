@@ -36,10 +36,10 @@ function bb_add_top_row(){
         'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
         'container' => 'nav',
         'container_class' => 'menu-top-row-menu-container',
-        
-        
-
 	) );
+	echo '<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#genesis-nav-primary">';
+	echo '<i class="fa fa-bars" aria-hidden="true" ></i>';
+	echo '</button>';
 	// wp_nav_menu (array(
 	// 	'theme_location'  => 'mobile-menu',
 	// 	'menu'            => '',
