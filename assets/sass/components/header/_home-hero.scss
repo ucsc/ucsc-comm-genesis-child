@@ -42,11 +42,19 @@
         }
     }
     .hero-chevron-container {
-        position: absolute;
-        //left: 50%;
-        bottom: 10px;
-        color: $ucsc--primary-yellow;
-        .hero-chevron {}
+        .wrap {
+            display: flex;
+            flex-wrap: wrap;
+            height: 100%;
+            width: 80%;
+            align-items: center;
+            .hero-chevron {
+                position: absolute;
+                left: 50%;
+                bottom: 0px;
+                color: $ucsc--primary-yellow;
+            }
+        }
     }
 }
 

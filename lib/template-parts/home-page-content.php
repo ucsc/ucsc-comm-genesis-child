@@ -54,11 +54,11 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     echo '<div class=hero-chevron-container>';
-    //echo '<div class= "wrap">';
-    //echo '<div class= "hero-chevron">';
+    echo '<div class= "wrap">';
+    echo '<div class= "hero-chevron">';
     echo '<i class="fa fa-angle-down fa-4x"></i>';
-    //echo '</div>';
-    //echo '</div>';
+    echo '</div>';
+    echo '</div>';
     echo '</div>';
     echo '</div>';
 }
