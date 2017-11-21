@@ -18,6 +18,7 @@
     }
     .hero-banner-container {
         background-color: $ucsc--primary-blue;
+        box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
         .hero-banner {
             img {
                 margin: 0 auto;

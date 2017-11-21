@@ -4,7 +4,7 @@
     background-color: $ucsc--primary-blue;
     @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, .5));
     //transition: all 1000ms ease;
-    //display: none;
+    display: none;
     position: fixed;
     text-align: initial;
     right: 0;
