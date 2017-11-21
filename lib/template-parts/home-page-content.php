@@ -20,9 +20,10 @@ function bb_home_hero() {
     echo '<div class= "wrap">';
     echo '<div class= "hero-nav">';
     wp_nav_menu( array(
-        'menu' => 'after-header-menu',
+        //'theme_location' => 'after-header-menu',
+		'menu' => 'primary-menu-2',
         'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows',
-        'menu_id' => 'hello', 
+        'menu_id' => '', 
         
         'container' => 'nav',
         'container_class' => 'nav-primary',
@@ -36,7 +37,7 @@ function bb_home_hero() {
     echo '<div class=hero-banner-container>';
     echo '<div class= "wrap">';
     echo '<div class= "hero-banner">';
-    $headerLogo = get_stylesheet_directory_uri().'/assets/images/UC_Santa_Cruz_Horizontal.png';
+    $headerLogo = get_stylesheet_directory_uri().'/assets/images/temp-logo.jpg';
     echo'<img class="" src="'.$headerLogo.'" alt="UCSC Logo" >';
     echo '</div>';
     echo '</div>';
@@ -56,11 +57,11 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     echo '<div class=hero-chevron-container>';
-    echo '<div class= "wrap">';
-    echo '<div class= "hero-chevron">';
-    echo "Hello World";
-    echo '</div>';
-    echo '</div>';
+    //echo '<div class= "wrap">';
+    //echo '<div class= "hero-chevron">';
+    echo '<i class="fa fa-angle-down fa-4x"></i>';
+    //echo '</div>';
+    //echo '</div>';
     echo '</div>';
     echo '</div>';
 }
