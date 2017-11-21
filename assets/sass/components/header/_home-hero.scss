@@ -23,6 +23,8 @@
                 margin: 0 auto;
                 text-align: center;
                 display: block;
+                width: 30%;
+                padding: 10px 0;
             }
         }
     }
@@ -32,11 +34,18 @@
                 text-align: center;
                 font-weight: 300;
                 text-transform: uppercase;
-                color: $ucsc--primary-blue;
+                @include rem( font-size, $hero-site-title--font-size);
+                a {
+                    color: $ucsc--primary-blue;
+                }
             }
         }
     }
     .hero-chevron-container {
+        position: absolute;
+        //left: 50%;
+        bottom: 10px;
+        color: $ucsc--primary-yellow;
         .hero-chevron {}
     }
 }
