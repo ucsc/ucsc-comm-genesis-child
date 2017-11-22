@@ -63,6 +63,6 @@ function bb_register_mobile_menu() {
 //* Add custom classes to navigation menu
 add_filter( 'genesis_attr_nav-primary', __NAMESPACE__ . '\bb_new_primary_nav_class' );
 function bb_new_primary_nav_class( $attributes ) {
- $attributes['class'] = 'nav-primary collapse';
+ $attributes['class'] = 'nav-primary navbar-collapse collapse navbar-target';
 return $attributes;
 }

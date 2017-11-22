@@ -1,9 +1,6 @@
 /*Top Row*/
 
-.page-top {
-    background-color: $ucsc--primary-blue;
-    @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, .5));
-    //transition: all 1000ms ease;
+#page-top {
     display: none;
     position: fixed;
     text-align: initial;
@@ -14,6 +11,22 @@
     .admin-bar & {
         top: 32px;
     }
+}
+
+.page-top {
+    background-color: $ucsc--primary-blue;
+    @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, .5));
+    //transition: all 1000ms ease;
+    // display: none;
+    // position: fixed;
+    text-align: initial;
+    // right: 0;
+    // left: 0;
+    // top: 0;
+    // z-index: 1000;
+    // .admin-bar & {
+    //     top: 32px;
+    // }
     .top-row {
         margin-top: 0;
         margin-bottom: 0;

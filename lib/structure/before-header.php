@@ -21,7 +21,7 @@
  }
 
 
-
+// Front Page drop-down
 function bb_add_top_row_front(){
 	$logo = get_stylesheet_directory_uri().'/assets/images/logo-abbr.png';
 	
@@ -36,31 +36,34 @@ function bb_add_top_row_front(){
 	echo '</div>';
 	echo '<div class="top-row-right">';
 	genesis_widget_area( 'top-row-search' );
-	wp_nav_menu( array(
-        'menu' => 'Top Row Menu',
-        'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
-        'container' => 'nav',
-        'container_class' => 'menu-top-row-menu-container',
-	) );
-	
-	// wp_nav_menu (array(
-	// 	'theme_location'  => 'mobile-menu',
-	// 	'menu'            => '',
-	// 	'container'       => 'nav',
-	// 	'container_class' => 'nav-primary nav-mobile',
-	// 	'container_id'    => '',
-	// 	'menu_class'      => 'menu genesis-nav-menu menu-primary menu-mobile responsive-menu',
-	// 	'menu_id'         => '',
-	// 	'echo'            => true,
-	// 	'fallback_cb'     => 'wp_page_menu',
-	// 	'before'          => '',
-	// 	'after'           => '',
-	// 	'link_before'     => '',
-	// 	'link_after'      => '',
-	// 	'items_wrap'      => '<div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
-	// 	'depth'           => 0,
-	// 	'walker'          => ''
-	// ));
+
+	//UCSC General Menu
+	// wp_nav_menu( array(
+    //     'menu' => 'Top Row Menu',
+    //     'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
+    //     'container' => 'nav',
+    //     'container_class' => 'menu-top-row-menu-container',
+	// ) );
+
+	//Primary Nav	
+	wp_nav_menu (array(
+		//'theme_location'  => 'primary-menu',
+		'menu'            => 'primary-menu-2',
+		'container'       => 'nav',
+		'container_class' => 'nav-primary',
+		'container_id'    => '',
+		'menu_class'      => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows',
+		'menu_id'         => '',
+		'echo'            => true,
+		'fallback_cb'     => 'wp_page_menu',
+		'before'          => '',
+		'after'           => '',
+		'link_before'     => '',
+		'link_after'      => '',
+		'items_wrap'      => '<div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
+		'depth'           => 0,
+		'walker'          => ''
+	));
 	
 	echo '</div>';
 	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
@@ -70,11 +73,13 @@ function bb_add_top_row_front(){
     echo '</div>';
 	}
 
+	//Inner pages top row
+
 	function bb_add_top_row(){
 		$logo = get_stylesheet_directory_uri().'/assets/images/logo-abbr.png';
 		
 		$custom_title = '<a href="/"><img class="header-logo" src="'.$logo.'" alt="UCSC Logo" ></a>';
-		echo '<div class="page-top" id="page-top">';
+		echo '<div class="page-top" id="">';
 		echo '<div class="top-row wrap">';
 		
 		echo '<div class="top-row-left">';
@@ -111,11 +116,11 @@ function bb_add_top_row_front(){
 		// ));
 		
 		echo '</div>';
-		echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
+		echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-target">';
 		echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
 		echo '</button>';
 		echo '</div>';
-		echo 'hello world!';
+
 		echo '</div>';
 		}
 	

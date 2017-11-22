@@ -1,10 +1,6 @@
 //
 // Base navigation styles
 //==========================
-.nav-primary #menu-item-1350 a {
-    padding: 20px 20px 20px 0;
-}
-
 .genesis-nav-menu {
     clear: both;
     @include rem( font-size, $nav--font-size);

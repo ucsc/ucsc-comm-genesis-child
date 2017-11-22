@@ -1,6 +1,10 @@
 /* ## Primary Navigation
 --------------------------------------------- */
 
+#genesis-nav-primary a:nth-of-type(1) {
+    padding: 20px 20px 20px 0;
+}
+
 .nav-primary {
     background-color: $primary-nav--background-color;
     //@include box-shadow(0 5px 5px -5px rgba(0, 0, 0, .2));
@@ -8,5 +12,15 @@
     .hero-container & {
         background-color: none;
         color: $white;
+    }
+}
+
+.navbar-collapse {
+    width: auto;
+    &.collapse {
+        display: block;
+        visibility: visible;
+        height: auto;
+        overflow: visible;
     }
 }
