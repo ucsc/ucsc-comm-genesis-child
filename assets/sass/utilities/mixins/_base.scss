@@ -14,3 +14,7 @@
     -ms-box-shadow: $shadow;
     box-shadow: $shadow;
 }
+
+@mixin collapse {
+    display: none;
+}
