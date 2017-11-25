@@ -5,9 +5,10 @@
     background: url(assets/images/home-header-hero.jpg) no-repeat top center;
     height: 100vh;
     background-size: cover;
-    min-height: 1000px;
-    // display: flex;
-    // flex-wrap: wrap;
+    min-height: 500px;
+    @include media($breakpoint__screen-size--medium) {
+        height: 50vh;
+    }
     .hero-nav-container {
         .hero-nav {
             padding: 100px 0;

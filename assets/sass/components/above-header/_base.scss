@@ -33,6 +33,17 @@
         //max-width: $max-width;
         margin: 0 auto;
         overflow: auto;
+        .nav-primary {
+            background-color: $ucsc--primary-blue;
+        }
+        .genesis-nav-menu {
+            a {
+                color: $white;
+            }
+            .menu-item-has-children>a:after {
+                color: $white;
+            }
+        }
         /* @include media($breakpoint__screen-size--larger) {
             max-width: $max-width--larger-screen;
         }
