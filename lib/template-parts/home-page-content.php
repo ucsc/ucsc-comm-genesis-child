@@ -15,7 +15,7 @@ add_action ('genesis_after_header',__NAMESPACE__ . '\bb_home_hero', 20);
 
 function bb_home_hero() {
     
-    echo '<div class= "hero-container">';
+    echo '<div class= "hero-home">';
     echo '<div class= "hero-nav-container">';
     echo '<div class= "wrap">';
     echo '<div class= "hero-nav">';
@@ -34,6 +34,7 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     echo '</div>';
+    echo '<div class=hero-banner-title-container>';
     echo '<div class=hero-banner-container>';
     echo '<div class= "wrap">';
     echo '<div class= "hero-banner">';
@@ -53,6 +54,7 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     echo '</div>';
+    
     echo '<div class=hero-chevron-container>';
     echo '<div class= "wrap">';
     echo '<div class= "hero-chevron">';
@@ -61,6 +63,8 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     echo '</div>';
+    echo '</div>';
+    
 }
 
 

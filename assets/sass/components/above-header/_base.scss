@@ -35,6 +35,10 @@
         overflow: auto;
         .nav-primary {
             background-color: $ucsc--primary-blue;
+            float: right;
+            @include media($breakpoint__screen-size--medium) {
+                display: none;
+            }
         }
         .genesis-nav-menu {
             a {

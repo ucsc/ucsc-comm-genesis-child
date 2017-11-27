@@ -1,21 +1,31 @@
 //
 // Home Hero Style
 //==============================
-.hero-container {
+.hero-home {
     background: url(assets/images/home-header-hero.jpg) no-repeat top center;
     height: 100vh;
     background-size: cover;
     min-height: 500px;
     @include media($breakpoint__screen-size--medium) {
-        height: 50vh;
+        //height: 50vh;
     }
     .hero-nav-container {
         .hero-nav {
+            @include media($breakpoint__screen-size--medium) {
+                display: none;
+            }
             padding: 100px 0;
             .nav-primary {
                 background-color: transparent;
             }
         }
+    }
+    .hero-banner-title-container {
+        display: flex;
+        flex-direction: column;
+        height: 300px;
+        justify-content: center;
+        align-items: center;
     }
     .hero-banner-container {
         background-color: $ucsc--primary-blue;
