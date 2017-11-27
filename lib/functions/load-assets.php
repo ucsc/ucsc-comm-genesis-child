@@ -33,6 +33,9 @@ function enqueue_assets() {
 
 	//Hide Primary Nav Menu on Mobile
 	//wp_enqueue_script( CHILD_TEXT_DOMAIN .'-hide-primary-nav', CHILD_URL . '/assets/js/hide-primary-nav-mobile.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+
+	//Home Page Scroll
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-home-page-scroll', CHILD_URL . '/assets/js/home-page-scroll-to-here.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	
 	// FontAwesome
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/64d0d03cae.js',  null, true);

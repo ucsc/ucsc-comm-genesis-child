@@ -6,7 +6,7 @@
  */
 
 jQuery(document).ready(function($) {
-    var offset = 250;
+    var offset = 750;
     var duration = 500;
     $(window).scroll(function() {
         if ($(this).scrollTop() < offset) {

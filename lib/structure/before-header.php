@@ -21,7 +21,7 @@
  }
 
 
-// Front Page drop-down
+// Front/Home Page drop-down
 function bb_add_top_row_front(){
 	$logo = get_stylesheet_directory_uri().'/assets/images/logo-abbr.png';
 	
@@ -67,7 +67,8 @@ function bb_add_top_row_front(){
 	
 	echo '</div>';
 	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
-	echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
+	//echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
+	echo '<span class="dashicons dashicons-menu"></span>';
 	echo '</button>';
 	echo '</div>';
 	//Primary Nav Mobile	
