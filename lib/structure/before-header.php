@@ -48,7 +48,7 @@ function bb_add_top_row_front(){
 	//Primary Nav	
 	wp_nav_menu (array(
 		//'theme_location'  => 'primary-menu',
-		'menu'            => 'nav-mobile',
+		'menu'            => 'main-menu',
 		'container'       => 'nav',
 		'container_class' => 'nav-primary',
 		'container_id'    => '',
@@ -67,14 +67,14 @@ function bb_add_top_row_front(){
 	
 	echo '</div>';
 	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
-	//echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
-	echo '<span class="dashicons dashicons-menu"></span>';
+	echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
+	//echo '<span class="dashicons dashicons-menu"></span>';
 	echo '</button>';
 	echo '</div>';
 	//Primary Nav Mobile	
 	wp_nav_menu (array(
-		//'theme_location'  => 'primary-menu',
-		'menu'            => 'primary-menu-2',
+		'theme_location'  => 'mobile-menu',
+		'menu'            => 'main-menu',
 		'container'       => 'nav',
 		'container_class' => 'nav-primary collapse',
 		'container_id'    => 'genesis-nav-primary',
@@ -109,12 +109,12 @@ function bb_add_top_row_front(){
 		echo '</div>';
 		echo '<div class="top-row-right">';
 		genesis_widget_area( 'top-row-search' );
-		wp_nav_menu( array(
-			'menu' => 'Top Row Menu',
-			'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
-			'container' => 'nav',
-			'container_class' => 'menu-top-row-menu-container',
-		) );
+		// wp_nav_menu( array(
+		// 	'menu' => 'Top Row Menu',
+		// 	'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
+		// 	'container' => 'nav',
+		// 	'container_class' => 'menu-top-row-menu-container',
+		// ) );
 		
 		// wp_nav_menu (array(
 		// 	'theme_location'  => 'mobile-menu',

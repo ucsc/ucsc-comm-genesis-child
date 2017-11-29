@@ -66,3 +66,20 @@ function bb_new_primary_nav_class( $attributes ) {
  $attributes['class'] = 'nav-primary navbar-collapse collapse navbar-target';
 return $attributes;
 }
+
+//* Add search form to Mobile Menu
+
+add_filter('wp_nav_menu_items', __NAMESPACE__ . '\bb_add_search_box_to_menu', 10, 2);
+function bb_add_search_box_to_menu( $items, $args ) {
+
+	ob_start();
+	get_search_form();
+	$search = ob_get_clean();
+
+    if( $args->theme_location == 'mobile-menu'||$args->theme_location == 'primary' )
+		return '<li class="left search">' . $search . '</li>'.$items;
+		
+ 
+	return $items;
+	
+}

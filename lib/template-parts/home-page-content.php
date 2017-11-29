@@ -21,7 +21,7 @@ function bb_home_hero() {
     echo '<div class= "hero-nav">';
     wp_nav_menu( array(
         //'theme_location' => 'after-header-menu',
-		'menu' => 'primary-menu-2',
+		'menu' => 'main-menu',
         'menu_class' => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows',
         'menu_id' => '', 
         
