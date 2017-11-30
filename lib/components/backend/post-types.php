@@ -60,15 +60,15 @@ add_action( 'init', __NAMESPACE__ . '\bb_register_social_media_directory_post_ty
 function bb_register_editorial_style_guide_post_type() {
 	$labels = array(
 		'name' => 'A-Z Editorial Style Guide',
-		'singular_name' => 'Editorial Style Guide Item',
+		'singular_name' => 'Editorial Style Guide Entry',
 		'add_new' => 'Add New',
-		'add_new_item' => 'Add New Editorial Style Guide Item',
-		'edit_item' => 'Edit Editorial Style Guide Item',
-		'new_item' => 'New Editorial Style Guide Item',
-		'view_item' => 'View Editorial Style Guide Item',
-		'search_items' => 'Search Editorial Style Guide Items',
-		'not_found' =>  'No Editorial Style Guide items found',
-		'not_found_in_trash' => 'No Editorial Style Guide items found in trash',
+		'add_new_item' => 'Add New Editorial Style Guide Entry',
+		'edit_item' => 'Edit Editorial Style Guide Entry',
+		'new_item' => 'New Editorial Style Guide Entry',
+		'view_item' => 'View Editorial Style Guide Entry',
+		'search_items' => 'Search Editorial Style Guide Entries',
+		'not_found' =>  'No Editorial Style Guide entries found',
+		'not_found_in_trash' => 'No Editorial Style Guide entries found in trash',
 		'parent_item_colon' => '',
 		'menu_name' => 'A-Z Ed Style Guide'
 	);
@@ -83,7 +83,7 @@ function bb_register_editorial_style_guide_post_type() {
 		'query_var' => true,
 		'rewrite' => array('slug' => 'a-z-style-guide'),
 		'capability_type' => 'post',
-		'has_archive' => false, 
+		'has_archive' => true, 
 		'hierarchical' => false,
         'menu_position' => null,
         'menu_icon' => 'dashicons-art',

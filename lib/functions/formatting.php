@@ -45,3 +45,16 @@ function blackbird_back_to_top () {
  
  // Use shortcodes in widgets
  add_filter( 'widget_text', 'do_shortcode' );
+
+ //Custom Search Results Template Chooser
+ add_filter('template_include', __NAMESPACE__ . '\bb_search_template_chooser');  
+ function bb_search_template_chooser($template)   
+ {    
+   global $wp_query;   
+   $post_type = get_query_var('post_type');   
+   if( $wp_query->is_search && $post_type == 'a_z_style_guide' )   
+   {
+     return locate_template('style-guide-search.php');  //  redirect to style-guide-search.php
+   }   
+   return $template;   
+ }

@@ -1,0 +1,32 @@
+//A-Z Style Guide Menu
+//====================
+.menu-alpha-menu-container {
+    ul {
+        li {
+            display: block;
+            float: left;
+            box-sizing: border-box;
+            border-right: 1px solid white;
+            text-align: center;
+            width: 3.98%;
+            margin: 0;
+            padding: 0;
+            a {
+                background: $ucsc--light-blue;
+                color: #fff;
+                display: block;
+                padding: 9px 0px;
+                width: 100%;
+                font-size: 13px;
+                font-weight: 700;
+                text-decoration: none;
+            }
+            a:hover {
+                background: $ucsc--primary-blue;
+            }
+        }
+        .current-menu-item a {
+            background: $ucsc--primary-blue;
+        }
+    }
+}
