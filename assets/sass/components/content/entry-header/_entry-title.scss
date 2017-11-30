@@ -7,9 +7,9 @@
     font-family: $font-family--eb-garamond;
     .page-title & {
         font-family: $base--font-family;
-        color: $white;
+        color: $ucsc--primary-blue;
         font-weight: 400;
-        text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
+        //text-shadow: 0 -1px 0 rgba(0, 0, 0, .3);
     }
     a {
         color: $entry-title--link-color;

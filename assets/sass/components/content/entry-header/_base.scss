@@ -1,7 +1,9 @@
 .page-title {
-    background-color: green;
     padding: 15px 0;
-    background: url(assets/images/tessellation-bg-12.png) no-repeat right center $ucsc--magenta;
+    //background: url(assets/images/tessellation-bg-12.png) no-repeat right center $ucsc--magenta;
+    .wrap {
+        border-bottom: 2px solid $ucsc--magenta;
+    }
 }
 
 .entry-header {}
