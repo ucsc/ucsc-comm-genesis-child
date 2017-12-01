@@ -83,3 +83,19 @@ function bb_add_search_box_to_menu( $items, $args ) {
 	return $items;
 	
 }
+
+/**
+ * Create a new menu location for Alpha Menu
+ *
+ * @since 1.0.0
+ *
+ * @param array $args
+ *
+ * @return array
+ */
+
+add_action( 'after_setup_theme', __NAMESPACE__ . '\bb_register_alpha_menu' );
+function bb_register_alpha_menu() {
+	register_nav_menu( 'alpha-menu', __( 'Alpha Menu' ) );
+}
+

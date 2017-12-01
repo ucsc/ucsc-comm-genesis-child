@@ -40,9 +40,10 @@ function enqueue_assets() {
 	// FontAwesome
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/64d0d03cae.js',  null, true);
 
-	// Bootstrap js
+	// Bootstrap components js
 	// wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',  null, true);
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap', CHILD_URL . '/assets/js/bootstrap.min.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-collapse', CHILD_URL . '/assets/js/collapse.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-dropdown', CHILD_URL . '/assets/js/dropdown.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 
 	// wp_enqueue_script( CHILD_TEXT_DOMAIN . '-responsive-menu', CHILD_URL . '/assets/js/responsive-menu.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
