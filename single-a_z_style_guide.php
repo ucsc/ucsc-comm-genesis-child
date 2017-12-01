@@ -35,9 +35,15 @@ namespace UCSC\Genesis;
 		'items_wrap'      => '<div class="wrap menu-alpha-container"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
 		'depth'           => 0,
 		'walker'          => ''
-    ));
+	));
+
+	echo '<div class="menu-alpha-menu-mobile-container">';
+	echo '<div class="wrap">';
     
-    bb_alpha_menu_dropdown();
+	bb_alpha_menu_dropdown();
+	echo '</div>';
+	echo '</div>';
+	echo '</div>';
 
  }
 
@@ -76,7 +82,7 @@ function bb_alpha_menu_dropdown() {
 		$menu_items = wp_get_nav_menu_items($menu->term_id);
 
 		$menu_list = '<div class="dropdown">' ."\n";
-		$menu_list .='<button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Click Me</button>' ."\n";
+		$menu_list .='<button class="dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Filter by alpha...<span class="dashicons dashicons-arrow-down"></span></button>' ."\n";
 		$menu_list .= "\t\t\t\t". '<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">' ."\n";
 		foreach ((array) $menu_items as $key => $menu_item) {
 			$title = $menu_item->title;

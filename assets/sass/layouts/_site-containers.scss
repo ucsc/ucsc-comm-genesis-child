@@ -20,8 +20,8 @@
     clear: both;
     padding-top: 40px;
     word-wrap: break-word;
-    background: url('assets/images/tessellation-bg-03.png') no-repeat right bottom;
-    @include media( $breakpoint__screen-size--small) {
+    //background: url('assets/images/tessellation-bg-03.png') no-repeat right bottom;
+    @include media( $breakpoint__screen-size--smaller) {
         padding: 5% 5% 0;
     }
     .page &,

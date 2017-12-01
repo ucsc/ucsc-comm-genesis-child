@@ -1,6 +1,9 @@
 //A-Z Style Guide Menu
 //====================
 .menu-alpha-menu-container {
+    @include media($breakpoint__screen-size--smaller) {
+        display: none;
+    }
     ul {
         li {
             display: block;
@@ -8,7 +11,7 @@
             box-sizing: border-box;
             border-right: 1px solid white;
             text-align: center;
-            width: 3.98%;
+            width: 3.84%;
             margin: 0;
             padding: 0;
             a {
@@ -28,5 +31,15 @@
         .current-menu-item a {
             background: $ucsc--primary-blue;
         }
+    }
+}
+
+.menu-alpha-menu-mobile-container {
+    display: none;
+    @include media($breakpoint__screen-size--smaller) {
+        display: block;
+    }
+    button {
+        padding: 8px 12px;
     }
 }
