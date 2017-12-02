@@ -13,10 +13,14 @@ namespace UCSC\Genesis;
 
  //* Force full-width-content layout setting
  //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+ //* Add Breadcrumbs
+include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 
- add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_alpha_menu', 20 );
+ add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_alpha_menu', 10 );
+
  
  function bb_alpha_menu(){
+	echo '<div class="wrap"><p class="style-guide-subtitle"> UC Santa Cruz Editorial Style Guide</p></div>';
      
      wp_nav_menu (array(
 		//'theme_location'  => 'primary-menu',
