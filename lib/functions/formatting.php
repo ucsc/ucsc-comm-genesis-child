@@ -58,3 +58,9 @@ function blackbird_back_to_top () {
    }   
    return $template;   
  }
+
+
+  // Add options page ACF
+  if (function_exists('acf_add_options_page')){
+    acf_add_options_page();
+  }

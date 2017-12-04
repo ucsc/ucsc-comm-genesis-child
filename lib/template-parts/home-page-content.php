@@ -14,8 +14,11 @@ include CHILD_THEME_DIR.'/lib/template-parts/home-content-loop.php';
 add_action ('genesis_after_header',__NAMESPACE__ . '\bb_home_hero', 20);
 
 function bb_home_hero() {
+    $hero = get_field('hero_image','option');
+    if (get_field('hero_image','option')):
     
-    echo '<div class= "hero-home">';
+    echo '<div class= "hero-home" style="background:url('.$hero.') no-repeat fixed top; background-size: cover;">';
+    endif;
     echo '<div class= "hero-nav-container">';
     echo '<div class= "wrap">';
     echo '<div class= "hero-nav">';
