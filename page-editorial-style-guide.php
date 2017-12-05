@@ -12,7 +12,7 @@
  //* Force full-width-content layout setting
 add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 //* Add Alpha Menu
- //include CHILD_THEME_DIR.'/lib/template-parts/editorial-style-alpha-menu.php';
+ include CHILD_THEME_DIR.'/lib/template-parts/editorial-style-alpha-menu.php';
  //add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_alpha_menu2', 10 );
  
   
