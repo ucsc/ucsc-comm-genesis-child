@@ -10,7 +10,7 @@
  */
  namespace UCSC\Communications;
  function bb_register_custom_sidebars(){
-    /** Register Home Page widget areas */
+/** Register Top-Row Search widget areas */
  genesis_register_widget_area( array(
     
         'id'			=> 'top-row-search',
