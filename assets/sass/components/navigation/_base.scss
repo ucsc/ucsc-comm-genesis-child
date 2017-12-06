@@ -33,7 +33,16 @@
         text-decoration: none;
         text-transform: uppercase;
         display: block;
-        padding: 12px 20px;
+        padding: 12px 15px;
+        @include media($breakpoint__screen-size--medium) {
+            padding: 12px 20px;
+        }
+        span {
+            padding-bottom: 5px;
+            @include media($breakpoint__screen-size--medium) {
+                padding-bottom: 0px;
+            }
+        }
     }
     a:hover,
     a:focus,
@@ -42,6 +51,12 @@
     .sub-menu .current-menu-item>a:focus {
         color: $nav--hover-color;
         text-decoration: none;
+        span {
+            border-bottom: 3px solid $ucsc--light-orange;
+            @include media($breakpoint__screen-size--medium) {
+                border-bottom: none;
+            }
+        }
     }
     .sub-menu {
         border: 1px solid $submenu--border-color;

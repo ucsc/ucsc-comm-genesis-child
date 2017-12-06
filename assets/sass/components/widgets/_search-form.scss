@@ -78,5 +78,6 @@
         display: none;
         @include media($breakpoint__screen-size--medium) {
             display: block;
+            padding-top: 10px;
         }
     }

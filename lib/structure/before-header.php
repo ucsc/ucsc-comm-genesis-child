@@ -40,37 +40,7 @@ function bb_add_top_row_front(){
 	//echo '<span class="dashicons dashicons-menu"></span>';
 	echo '</button>';
 	genesis_widget_area( 'top-row-search' );
-
-	//UCSC General Menu
-	// wp_nav_menu( array(
-    //     'menu' => 'Top Row Menu',
-    //     'menu_class' => 'menu js-superfish sf-js-enabled sf-arrows',
-    //     'container' => 'nav',
-    //     'container_class' => 'menu-top-row-menu-container',
-	// ) );
-
-	//Primary Nav	
-	// wp_nav_menu (array(
-	// 	//'theme_location'  => 'primary-menu',
-	// 	'menu'            => 'main-menu',
-	// 	'container'       => 'nav',
-	// 	'container_class' => 'nav-primary',
-	// 	'container_id'    => '',
-	// 	'menu_class'      => 'menu genesis-nav-menu menu-primary js-superfish sf-js-enabled sf-arrows',
-	// 	'menu_id'         => '',
-	// 	'echo'            => true,
-	// 	'fallback_cb'     => 'wp_page_menu',
-	// 	'before'          => '',
-	// 	'after'           => '',
-	// 	'link_before'     => '',
-	// 	'link_after'      => '',
-	// 	'items_wrap'      => '<div class="wrap"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
-	// 	'depth'           => 0,
-	// 	'walker'          => ''
-	// ));
-	
 	echo '</div>';
-	
 	echo '</div>';
 	//Primary Nav Mobile	
 	wp_nav_menu (array(
