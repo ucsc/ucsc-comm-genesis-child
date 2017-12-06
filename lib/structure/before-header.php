@@ -35,6 +35,10 @@ function bb_add_top_row_front(){
 	echo '</div>';
 	echo '</div>';
 	echo '<div class="top-row-right">';
+	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
+	echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
+	//echo '<span class="dashicons dashicons-menu"></span>';
+	echo '</button>';
 	genesis_widget_area( 'top-row-search' );
 
 	//UCSC General Menu
@@ -66,10 +70,7 @@ function bb_add_top_row_front(){
 	// ));
 	
 	echo '</div>';
-	echo '<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#genesis-nav-primary">';
-	echo '<i class="fa fa-bars fa-2x" aria-hidden="true" ></i>';
-	//echo '<span class="dashicons dashicons-menu"></span>';
-	echo '</button>';
+	
 	echo '</div>';
 	//Primary Nav Mobile	
 	wp_nav_menu (array(

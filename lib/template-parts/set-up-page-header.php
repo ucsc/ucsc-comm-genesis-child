@@ -13,16 +13,23 @@ function reposition_entry_header() {
 		//add_action( 'genesis_after_header', 'genesis_do_post_title', 15 );
 		//add_action( 'genesis_after_header', 'genesis_post_info', 15 );
 
+		add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_page_header', 15 );
+
 
 
 }
-add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_page_header', 15 );
 
 function bb_page_header(){
 	$pageTitle = get_the_title();
-	echo '<div class="page-title">';
-	echo '<div class="wrap">';
-	echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.'</h1>';
-	echo '</div>';
-	echo '</div>';
+	
+	echo '<div class="page-title"><div class="wrap">';
+	if ('a_z_style_guide' == get_post_type()){
+		echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.' &ndash; Editorial Style Guide</h1>';
+	} else {
+	
+		echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.'</h1>';
+	
+	}
+	echo '</div></div>';
+	
 }
