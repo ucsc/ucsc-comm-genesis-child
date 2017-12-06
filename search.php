@@ -21,4 +21,5 @@
 //* Add Content
 //include CHILD_THEME_DIR.'/lib/template-parts/child-page-loop.php';
 
+
 genesis();

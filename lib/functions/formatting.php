@@ -47,7 +47,7 @@ function blackbird_back_to_top () {
  add_filter( 'widget_text', 'do_shortcode' );
 
  //Custom Search Results Template Chooser
- add_filter('template_include', __NAMESPACE__ . '\bb_search_template_chooser');  
+ //add_filter('template_include', __NAMESPACE__ . '\bb_search_template_chooser');  
  function bb_search_template_chooser($template)   
  {    
    global $wp_query;   

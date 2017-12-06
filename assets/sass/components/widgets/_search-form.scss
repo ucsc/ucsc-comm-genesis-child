@@ -10,7 +10,7 @@
     .entry-content &,
     .site-header & {
         margin-bottom: 40px;
-        width: 50%;
+        //width: 50%;
     }
     .site-header & {
         float: right;
@@ -47,7 +47,8 @@
 // }
 //New Version
 .genesis-nav-menu .search,
-.widget_search {
+.widget_search,
+.style-guide-search {
     input[type="submit"] {
         background: none !important;
         border: 0;
