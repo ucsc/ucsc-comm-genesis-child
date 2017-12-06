@@ -3,7 +3,6 @@ add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_alpha_menu', 10 );
 
  
  function bb_alpha_menu(){
-	 echo '<div class="style-guide-subtitle-container"><div class="wrap"><p class="style-guide-subtitle">Editorial Style Guide</p></div></div>';
      
      wp_nav_menu (array(
 		//'theme_location'  => 'primary-menu',

@@ -1,10 +1,5 @@
 //A-Z Style Guide Menu
 //====================
-//Hide Subtitle on Editorial Style Guide Page
-.editorial-style-guide .style-guide-subtitle-container {
-    display: none;
-}
-
 .menu-alpha-menu-container {
     @include media($breakpoint__screen-size--smaller) {
         display: none;
