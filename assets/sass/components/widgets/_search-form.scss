@@ -1,75 +1,82 @@
-/* ## Search Form
+    /* ## Search Form
 --------------------------------------------- */
-
-.search-form {
-    overflow: hidden;
-    position: relative;
-    >input {
-        padding-left: 40px;
-    }
-    .entry-content &,
-    .site-header & {
-        margin-bottom: 40px;
-        //width: 50%;
-    }
-    .site-header & {
-        float: right;
-        margin: 12px auto 0;
-        @include media($breakpoint__screen-size--medium) {
-            float: none;
-            margin: 16px auto;
+    
+    .search-form {
+        overflow: hidden;
+        position: relative;
+        >input {
+            padding-left: 40px;
+        }
+        .entry-content &,
+        .site-header & {
+            margin-bottom: 40px;
+            //width: 50%;
+        }
+        .site-header & {
+            float: right;
+            margin: 12px auto 0;
+            @include media($breakpoint__screen-size--medium) {
+                float: none;
+                margin: 16px auto;
+            }
         }
     }
-}
-
-.post-password-form
-/*,
+    
+    .post-password-form
+    /*,
 .search-form*/
-
-{
-    input[type="submit"] {
-        margin-top: 10px;
+    
+    {
+        input[type="submit"] {
+            margin-top: 10px;
+        }
     }
-}
-
-//Original
-// .genesis-nav-menu .search,
-// .widget_search {
-//   input[type="submit"] {
-//     border: 0;
-//     clip: rect(0, 0, 0, 0);
-//     height: 1px;
-//     margin: -1px;
-//     padding: 0;
-//     position: absolute;
-//     width: 1px;
-//   }
-// }
-//New Version
-.genesis-nav-menu .search,
-.widget_search,
-.style-guide-search {
-    input[type="submit"] {
-        background: none !important;
-        border: 0;
-        clip: inherit;
-        color: $ucsc--green;
-        display: inline-block;
-        content: "\f002";
-        font: 28px/1 dashicons;
-        height: 38px;
-        width: 38px;
-        padding: 0 10px 0 4px;
-        position: absolute;
-        left: 2px;
-        top: 0px;
-        vertical-align: top;
+    
+    //Original
+    // .genesis-nav-menu .search,
+    // .widget_search {
+    //   input[type="submit"] {
+    //     border: 0;
+    //     clip: rect(0, 0, 0, 0);
+    //     height: 1px;
+    //     margin: -1px;
+    //     padding: 0;
+    //     position: absolute;
+    //     width: 1px;
+    //   }
+    // }
+    //New Version
+    .genesis-nav-menu .search,
+    .widget_search,
+    .style-guide-search {
+        input[type="submit"] {
+            background: none !important;
+            border: 0;
+            clip: inherit;
+            color: $ucsc--green;
+            display: inline-block;
+            content: "\f002";
+            font: 28px/1 dashicons;
+            height: 38px;
+            width: 38px;
+            padding: 0 10px 0 4px;
+            position: absolute;
+            left: 2px;
+            top: 0px;
+            vertical-align: top;
+        }
     }
-}
-
-.left.search {
-    display: none;
-    @include media($breakpoint__screen-size--medium) {
-        display: block;
+    
+    .style-guide-search,
+    .left.search {
+        input[type="submit"] {
+            top: 10px;
+        }
     }
-}
+    
+    .left.search {
+        display: none;
+        @include media($breakpoint__screen-size--medium) {
+            display: block;
+        }
+    }

@@ -1,5 +1,5 @@
 <?php
-add_action( 'genesis_after_header', __NAMESPACE__ . '\bb_alpha_menu', 10 );
+add_action( 'genesis_before_content', __NAMESPACE__ . '\bb_alpha_menu', 10 );
 
  
  function bb_alpha_menu(){

@@ -1,6 +1,7 @@
 //A-Z Style Guide Menu
 //====================
 .menu-alpha-menu-container {
+    padding: 0 0 10px 0;
     @include media($breakpoint__screen-size--smaller) {
         display: none;
     }

@@ -16,7 +16,7 @@ namespace UCSC\Genesis;
  //* Add Breadcrumbs
 include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 //* A-Z Style Guide Search Form
-add_action ('genesis_before_content', __NAMESPACE__ .'\bb_do_alpha_search');
+add_action ('genesis_before_content', __NAMESPACE__ .'\bb_do_alpha_search', 20);
 function bb_do_alpha_search(){
 echo do_shortcode('[editorial-style-guide-search]');
 }
