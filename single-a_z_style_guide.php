@@ -15,6 +15,11 @@ namespace UCSC\Genesis;
  //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
  //* Add Breadcrumbs
 include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
+//* A-Z Style Guide Search Form
+add_action ('genesis_before_content', __NAMESPACE__ .'\bb_do_alpha_search');
+function bb_do_alpha_search(){
+echo do_shortcode('[editorial-style-guide-search]');
+}
 //* Add Alpha Menu
  include CHILD_THEME_DIR.'/lib/template-parts/editorial-style-alpha-menu.php';
 
