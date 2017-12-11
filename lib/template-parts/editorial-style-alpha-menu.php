@@ -18,18 +18,18 @@ add_action( 'genesis_before_content', __NAMESPACE__ . '\bb_alpha_menu', 10 );
 		'after'           => '',
 		'link_before'     => '',
 		'link_after'      => '',
-		'items_wrap'      => '<div class="wrap menu-alpha-container"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
+		'items_wrap'      => '<div class="menu-alpha-container"><ul id="%1$s" class="%2$s">%3$s</ul></div>',
 		'depth'           => 0,
 		'walker'          => ''
 	));
 
 	echo '<div class="menu-alpha-menu-mobile-container">';
-	echo '<div class="wrap">';
+	
     
 	bb_alpha_menu_dropdown();
 	echo '</div>';
 	echo '</div>';
-	echo '</div>';
+
 
  }
 

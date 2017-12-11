@@ -24,7 +24,8 @@ function bb_page_header(){
 	
 	echo '<div class="page-title"><div class="wrap">';
 	if ('a_z_style_guide' == get_post_type()){
-		echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.' &ndash; Editorial Style Guide</h1>';
+		// echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.' &ndash; Editorial Style Guide</h1>';
+		echo '<h1 class="entry-title" itemprop="headline"><span>'.$pageTitle.'</span> &ndash; Editorial Style Guide</h1>';
 	} else {
 	
 		echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.'</h1>';
