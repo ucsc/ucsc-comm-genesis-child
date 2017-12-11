@@ -13,6 +13,7 @@
             background: $ucsc--primary-blue;
             color: $white;
             padding: 0 10px;
+            @include box-shadow (inset 0px 0px 0px 2px $ucsc--magenta);
         }
     }
     a {

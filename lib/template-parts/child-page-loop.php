@@ -32,16 +32,18 @@ function bb_child_page_loop (){
         
 		$pageExcerpt = get_the_excerpt();
 		
-        echo '<div class="one-fourth first pb20">';  
+        echo '<div class="subpage-container">';
+        //echo '<div class="three-fourths pb20">';    
             
             if ( has_post_thumbnail() ) {
-                the_post_thumbnail('subpage-featured-image');
+                the_post_thumbnail('subpage-featured-image', array('class' => 'alignleft aligncenter'));
 			}
-		echo '</div>';
-		echo '<div class="three-fourths pb20">';   
+		//echo '</div>';
+		//echo '<div class="three-fourths pb20">';   
         echo '<h3><a href="'.$pagePermalink.'" rel="bookmark" title="'.$pageTitle.'">'.$pageTitle.'</a></h3>';
         echo '<p class="excerpt">'.$pageExcerpt.'</p>';
         echo'</div>';
+        echo '<div class="clear"></div>';
     endwhile; 
     
 	wp_reset_postdata();

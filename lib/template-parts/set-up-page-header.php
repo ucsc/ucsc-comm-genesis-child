@@ -22,7 +22,7 @@ function reposition_entry_header() {
 function bb_page_header(){
 	$pageTitle = get_the_title();
 	
-	echo '<div class="page-title"><div class="wrap">';
+	echo '<div class="page-title"><div class="wrap"><div class="page-title-container">';
 	if ('a_z_style_guide' == get_post_type()){
 		// echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.' &ndash; Editorial Style Guide</h1>';
 		echo '<h1 class="entry-title" itemprop="headline"><span>'.$pageTitle.'</span> &ndash; Editorial Style Guide</h1>';
@@ -31,6 +31,6 @@ function bb_page_header(){
 		echo '<h1 class="entry-title" itemprop="headline">'.$pageTitle.'</h1>';
 	
 	}
-	echo '</div></div>';
+	echo '</div></div></div>';
 	
 }

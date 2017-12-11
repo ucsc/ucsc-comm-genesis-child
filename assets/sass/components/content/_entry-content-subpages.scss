@@ -1,0 +1,29 @@
+/* ### Entry Content -- Subpages
+--------------------------------------------- */
+
+.subpage-container {
+    width: 100%;
+    a {
+        color: $ucsc--primary-blue;
+        border-bottom: none;
+        &:hover,
+        &:focus {
+            color: $ucsc--light-blue;
+            border-bottom: 2px solid $ucsc--light-blue;
+        }
+        &:visited {
+            color: $ucsc--primary-blue;
+            //border-bottom: 2px solid $ucsc--primary-blue;
+        }
+    }
+    @include media($breakpoint__screen-size--medium) {
+        .alignleft {
+            display: block;
+            margin: 0 auto 24px;
+            float: none;
+        }
+        h3 {
+            text-align: center;
+        }
+    }
+}
