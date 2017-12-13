@@ -40,6 +40,11 @@ li {
             text-align: center;
             padding: 0 5px;
             text-decoration: none;
+            border-bottom: none;
+            &:hover,
+            &:visited {
+                border-bottom: none;
+            }
         }
     }
 }
