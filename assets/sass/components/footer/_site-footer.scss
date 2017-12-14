@@ -5,23 +5,42 @@
     background-color: $site-footer--background-color;
     border-top: 1px solid $site-footer--border-color;
     @include rem(font-size, $site-footer--font-size);
-    font-size: 1.6rem;
-    line-height: 1;
-    padding: 60px 0;
+    line-height: 1.5;
+    padding: 20px 0 40px; //old: 60px 0
     text-align: center;
+    color: $white;
     p {
-        margin-bottom: 0;
+        margin-bottom: 20px;
+    }
+    a {
+        color: $white;
+        font-weight: 700;
+    }
+    img {
+        width: 70%;
+        padding-top: 20px;
+        float: left;
+        @include media($breakpoint__screen-size--medium) {
+            float: none;
+        }
     }
 }
 
+//Footer Social
+.footer-social-container,
+.footer-creds {
+    float: right;
+    @include media($breakpoint__screen-size--medium) {
+        float: none;
+    }
+}
 
-/**
- * Footer Social
- *
- * @author Jason Chafin
- * 
- *
- */
+.footer-creds {
+    text-align: right;
+    @include media($breakpoint__screen-size--medium) {
+        text-align: center;
+    }
+}
 
 .footer-social {
     width: 100%;
@@ -29,12 +48,13 @@
     text-align: center;
     li {
         display: inline;
-        padding: 0 10px 0 0 !important;
+        padding: 0 10px 0 0;
         &:last-child {
             padding: 0;
         }
         a:hover {
-            color: #00458c
+            color: $ucsc--light-blue;
+            //background-color: $white;
         }
     }
 }

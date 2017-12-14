@@ -23,27 +23,20 @@ function bb_customize_footer (){
 }
 
 function bb_communications_footer (){
+    $footerLogo = get_stylesheet_directory_uri().'/assets/images/temp-logo.jpg';
+    $copywright = do_shortcode('[footer_copyright first="2017"]');
+    echo '<div class="one-third first">';
     
-    echo '<div class="one-sixth first">';
-    $headerLogo = get_stylesheet_directory_uri().'/assets/images/temp-logo.jpg';
-    echo'<img class="" src="'.$headerLogo.'" alt="UCSC Logo" >';
+    echo'<img class="" src="'.$footerLogo.'" alt="UCSC Logo" >';
     echo '</div>';
-    echo '<div class="five-sixths">';
-    echo '<div class="footer-creds" style="float:right">';
-    //echo do_shortcode('[ucsc-social]');
+    echo '<div class="two-thirds">';
+    echo '<div class="footer-creds">';
+    $copywright = do_shortcode('[footer_copyright first="2017"]');
+    echo '<p><a href="/the-team/">Contact Us</a><br> UC Santa Cruz, 1156 High Street, Santa Cruz, CA  95064<br>'.$copywright.' Regents of the University of California. All Rights Reserved.</p>';
+    echo '</div>';
+    echo '<div class="clear"></div>';
+    echo '<div class="footer-social-container">';
     include CHILD_THEME_DIR.'/lib/template-parts/footer-social.php';
-    ?>
-    
-    <div class="footer-social">
-    <ul>
-    <li><a href="http://twitter.com/ucsc"><i class="fa fa-2x fa-twitter-square" aria-hidden="true"></i></a></li>
-    <li><a href="http://instagram.com/ucsc"><i class="fa fa-2x fa-instagram" aria-hidden="true"></i></a></li>
-    <li><a href="http://www.facebook.com/ucsantacruz"><i class="fa fa-2x fa-facebook-square" aria-hidden="true"></i></a></li>
-    <li><a href="http://youtube.com/ucsantacruz"><i class="fa fa-2x fa-youtube-square" aria-hidden="true"></i></a></li>
-    <li><a href="http://www.linkedin.com/groups?home=&gid=102708"><i class="fa fa-2x fa-linkedin-square" aria-hidden="true"></i></a></li>
-    </ul>
-    </div>
-    <?php
     echo '</div>';
     echo '</div>';
 }
