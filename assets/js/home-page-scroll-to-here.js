@@ -8,6 +8,6 @@
 jQuery(document).ready(function($) {
     $('.hero-chevron').on('click', function() {
         var body = $("html, body");
-        body.stop().animate({ scrollTop: $('#genesis-content').offset().top }, '500');
+        body.stop().animate({ scrollTop: $('#genesis-content').offset().top }, '350');
     });
 });

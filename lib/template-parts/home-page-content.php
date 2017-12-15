@@ -30,6 +30,8 @@ function bb_home_hero() {
         
         'container' => 'nav',
         'container_class' => 'nav-primary',
+        'link_before' => '<span>',
+        'link_after' => '</span>',
         
         
           ) );

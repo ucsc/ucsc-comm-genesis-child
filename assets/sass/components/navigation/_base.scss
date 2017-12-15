@@ -33,7 +33,7 @@
         text-decoration: none;
         text-transform: uppercase;
         display: block;
-        padding: 12px 15px;
+        padding: 12px 10px;
         @include media($breakpoint__screen-size--medium) {
             padding: 12px 20px;
         }
@@ -47,6 +47,7 @@
     a:hover,
     a:focus,
     .current-menu-item>a,
+    .current-page-ancestor>a,
     .sub-menu .current-menu-item>a:hover,
     .sub-menu .current-menu-item>a:focus {
         color: $nav--hover-color;
