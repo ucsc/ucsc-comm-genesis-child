@@ -44,6 +44,7 @@ function enqueue_assets() {
 	// wp_enqueue_script( 'bootstrap-js', 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js',  null, true);
 	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-collapse', CHILD_URL . '/assets/js/collapse.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-dropdown', CHILD_URL . '/assets/js/dropdown.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-modal', CHILD_URL . '/assets/js/modal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 
 	// wp_enqueue_script( CHILD_TEXT_DOMAIN . '-responsive-menu', CHILD_URL . '/assets/js/responsive-menu.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
