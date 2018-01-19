@@ -61,6 +61,12 @@ function bb_child_page_loop (){
             dynamic_sidebar( 'media-relations-page-sidebar' );
         echo '</ul>';
         endif;}
+    elseif (is_page('email')){
+        if ( is_active_sidebar( 'email-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'email-page-sidebar' );
+        echo '</ul>';
+        endif;}
     else {
         if ( is_active_sidebar( 'sidebar' ) ) :
             echo '<ul id="sidebar">';
