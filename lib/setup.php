@@ -80,7 +80,7 @@ function adds_theme_supports() {
 		),
 		'custom-background'               => null,
 		'genesis-after-entry-widget-area' => null,
-		'genesis-footer-widgets'          => 3,
+		'genesis-footer-widgets'          => 0,
 		'genesis-menus'                   => array(
 			'primary'   => __( 'After Header Menu', CHILD_TEXT_DOMAIN ),
 			'secondary' => __( 'Footer Menu', CHILD_TEXT_DOMAIN )

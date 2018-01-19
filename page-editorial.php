@@ -22,15 +22,4 @@ include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 //* Add Content
 include CHILD_THEME_DIR.'/lib/template-parts/child-page-loop.php';
 
-//* Add Custom Sidebar
-remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
-add_action( 'genesis_sidebar', 'bb_do_editorial_sidebar' );
-
-function bb_do_editorial_sidebar(){
-    dynamic_sidebar (
-        'editorial-page-sidebar'
-    );
-}
-
-
 genesis();

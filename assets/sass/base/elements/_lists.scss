@@ -48,3 +48,11 @@ li {
         }
     }
 }
+
+.fa-ul li {
+    list-style-type: none!important;
+}
+
+.fa-li {
+    color: $ucsc--blue-green;
+}

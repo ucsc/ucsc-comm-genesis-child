@@ -48,13 +48,28 @@ function bb_child_page_loop (){
     
 	wp_reset_postdata();
 	echo'</div>';
-	echo '<div class="one-third">';
-    if ( is_active_sidebar( 'sidebar' ) ) :
-	echo '<ul id="sidebar">';
-		dynamic_sidebar( 'sidebar' );
-	echo '</ul>';
-    endif; 
+    echo '<div class="one-third">';
+    if (is_page('editorial')){
+        if ( is_active_sidebar( 'editorial-page-sidebar' ) ) :
+	    echo '<ul id="sidebar">';
+	    	dynamic_sidebar( 'editorial-page-sidebar' );
+	    echo '</ul>';
+        endif;}
+    elseif (is_page('media-relations')){
+        if ( is_active_sidebar( 'media-relations-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'media-relations-page-sidebar' );
+        echo '</ul>';
+        endif;}
+    else {
+        if ( is_active_sidebar( 'sidebar' ) ) :
+            echo '<ul id="sidebar">';
+                dynamic_sidebar( 'sidebar' );
+            echo '</ul>';
+            endif;
+
+    }
     echo '</div>';
     echo '</div>';
     echo '</article>';
-   };
+       };
