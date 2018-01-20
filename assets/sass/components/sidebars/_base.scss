@@ -7,3 +7,10 @@
         //padding: 40px;
     }
 }
+
+.sidebar-spacer {
+    padding-left: 20px;
+    @include media($breakpoint__screen-size--medium) {
+        padding-left: 0px;
+    }
+}
