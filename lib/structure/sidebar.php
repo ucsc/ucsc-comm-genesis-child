@@ -20,3 +20,6 @@ namespace UCSC\Communications;
 function unregister_sidebar_callbacks() {
 
 }
+
+
+unregister_sidebar( 'sidebar-alt' );
