@@ -65,4 +65,4 @@ function blackbird_back_to_top () {
     acf_add_options_page();
   }
 
-
+  unregister_sidebar( 'sidebar-alt' );
