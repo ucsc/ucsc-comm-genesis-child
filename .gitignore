@@ -21,7 +21,7 @@ style.min.css
 .idea/
 
 # Rsync exclude file and scripts
-rsync-exclude.txt
-synctheme
-pull-content
-push-content
+# rsync-exclude.txt
+# synctheme
+# pull-content
+# push-content
