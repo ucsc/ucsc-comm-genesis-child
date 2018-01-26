@@ -1,30 +1,34 @@
-# UCSC Communications website Genesis child theme
+# UC Santa Cruz Communications website Genesis child theme
 
 This is the WordPress theme for the [UC Santa,Cruz Communicatons & Marketing](https://communications.ucsc.edu/), it is a child theme for the [Genesis theme framework](http://my.studiopress.com/themes/genesis/). 
 
-This theme features modular architecture and Sass, gulp, Bourbon, Neat, and Composer.
-
 ## Features
-
-This theme includes the following features:
 
 - Modular programming architecture
 - Configuration-based architecture
 - Modular CSS via Sass
-- Task runner uses gulp
-- Uses Bourbon and Neat
+- Task runner using gulp
+- Bourbon and Neat
 
 ## Dependencies
 
-This child theme requires the following dependencies:
-
 - [Genesis framework](http://my.studiopress.com/themes/genesis/)
-- [WordPress](https://wordpress.org/download/)
-- Node.js and npm installed on your local machine - here are the [Mac]((https://www.blackbirdconsult.com/labs/local-development-environment-setup-mac/node-npm)) and [Windows](https://www.blackbirdconsult.com/labs/local-development-environment-setup-windows/node-npm) labs to help you out
+- [WordPress](https://wordpress.org/download/) (preferably installed in a local environment)
+- [npm](https://www.npmjs.com/)
+- [Node.js](https://nodejs.org/en/)
 
 ## Install and build
 
-The theme needs for you to install the node modules in order to run gulp.  To do that, navigate into the theme and in the command line (terminal or Bash), type: `npm install` and then enter.  
+Assuming you are working in a local development environment, clone this repository into your `/wp-content/themes/` directory.
+
+### Install Node.js
+
+### Install npm
+
+### Install SASS framework
+
+The theme needs for you to install the node modules in order to run gulp.  To do that, navigate into the theme and in the command line (terminal or Bash), type: `npm install` and then enter.
+
 
 ## Additional Requirements
 
