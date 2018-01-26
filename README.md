@@ -1,10 +1,8 @@
-# Genesis Developer's Starter Child Theme
+# UCSC Communications website Genesis child theme
 
-This is a developer-friendly starter child theme for the [Genesis theming framework](http://my.studiopress.com/themes/genesis/) which includes a modular architecture, Sass, gulp, Bourbon, Neat, and Composer.  It is your starting child theme for all of your projects to save you time and moola. 
+This is the WordPress theme for the [UC Santa,Cruz Communicatons & Marketing](https://communications.ucsc.edu/), it is a child theme for the [Genesis theme framework](http://my.studiopress.com/themes/genesis/). 
 
-To see the entire lab series which built this child theme, go to: [Let’s Build a Custom Developer’s Genesis Starter Child Theme](https://www.blackbirdconsult.com/labs-guide/lets-build-custom-developers-genesis-starter-child-theme).
-
-This child theme is yours.  It's meant to be extended, customized, and changed to fit your needs.  Make it your own.  And then use it on every project.
+This theme features modular architecture and Sass, gulp, Bourbon, Neat, and Composer.
 
 ## Features
 
@@ -24,10 +22,12 @@ This child theme requires the following dependencies:
 - [WordPress](https://wordpress.org/download/)
 - Node.js and npm installed on your local machine - here are the [Mac]((https://www.blackbirdconsult.com/labs/local-development-environment-setup-mac/node-npm)) and [Windows](https://www.blackbirdconsult.com/labs/local-development-environment-setup-windows/node-npm) labs to help you out
 
-## Installation
+## Install and build
 
 The theme needs for you to install the node modules in order to run gulp.  To do that, navigate into the theme and in the command line (terminal or Bash), type: `npm install` and then enter.  
 
-## Contributors
+## Additional Requirements
 
-All feedback, bug reports, and pull requests are welcome.
+The **Communications & Marketing** website also requires a custom plugin to run properly. 
+
+- [UC Santa Cruz WordPress Core Functionality Plugin](https://github.com/Herm71/ucsc-core-functionality-plugin/tree/master)
