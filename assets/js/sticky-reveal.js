@@ -9,12 +9,14 @@ jQuery(document).ready(function($) {
     var offset = 500;
     var duration = 500;
     $(window).scroll(function() {
-        if ($(this).scrollTop() < offset) {
-            document.getElementById("page-top").style.display = "none";
-            //$('.page-top').slideUp(duration);
-        } else {
-            // $('.page-top').slideDown(duration);
-            document.getElementById("page-top").style.display = "block";
+        if ($("#page-top").length) {
+            if ($(this).scrollTop() < offset) {
+                document.getElementById("page-top").style.display = "none";
+                //$('.page-top').slideUp(duration);
+            } else {
+                // $('.page-top').slideDown(duration);
+                document.getElementById("page-top").style.display = "block";
+            }
         }
     });
 });
