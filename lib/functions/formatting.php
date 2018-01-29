@@ -10,6 +10,22 @@
  */
 namespace UCSC\Communications;
 
+/**
+ * Custom login logo
+ *
+ */
+add_action( 'login_enqueue_scripts', __NAMESPACE__ .'\bb_login_logo' );
+
+function bb_login_logo() { ?>
+  <style type="text/css">
+      #login h1 a, .login h1 a {
+          background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/wp-login.png);
+      background-size: 80px;  
+      background-repeat: no-repeat;
+      padding-bottom: 30px;
+      }
+  </style>
+<?php }
 
 // Add class for screen readers to site description
 add_filter( 'genesis_attr_site-description', 'genesis_attributes_screen_reader_class' );
