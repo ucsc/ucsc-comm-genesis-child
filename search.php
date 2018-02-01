@@ -27,13 +27,17 @@ if ( isset( $_GET['post_type'] )) {
   
  
 }
+else {
+  remove_action('genesis_loop','genesis_do_loop');
+  add_action('genesis_loop', __NAMESPACE__ . '\bb_search_loop');
+}
 
 function bb_do_alpha_search(){
 echo do_shortcode('[editorial-style-guide-search]');
 }
 
 function bb_style_guide_search_loop(){
-  //echo 'hello world';
+
   
   echo '<article class="page entry">';
        if ( have_posts() ) : while ( have_posts() ) : the_post();
@@ -56,11 +60,33 @@ function bb_style_guide_search_loop(){
       endwhile; 
     endif;
   
+}
+
+function bb_search_loop(){
+
   
-  
-  
-          //    echo '<!-- content -->';   
-          // echo '</article><!-- contentarea -->';
+  echo '<article class="page entry">';
+       if ( have_posts() ) : while ( have_posts() ) : the_post();
+          $searchTitle = get_the_title();
+          $searchPermalink = get_permalink();
+          $searchImage = get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
+          $searchExcerpt = get_the_excerpt();
+          echo '<div class="subpage-container">';   
+            
+            if ( has_post_thumbnail() ) {
+                the_post_thumbnail('subpage-featured-image', array('class' => 'alignleft aligncenter'));
+			}  
+        echo '<h3><a href="'.$searchPermalink.'" rel="bookmark" title="'.$searchTitle.'">'.$searchTitle.'</a></h3>';
+        if ($searchExcerpt != '') {
+          echo '<p class="excerpt">'.$searchExcerpt.'</p>';
+        }
+        
+        
+        echo'</div>';
+        echo '<div class="clear"></div>';
+       
+      endwhile; 
+    endif;
   
 }
 
