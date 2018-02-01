@@ -43,7 +43,7 @@ function bb_home_hero() {
     echo '<div class=hero-banner-container>';
     echo '<div class= "wrap">';
     echo '<div class= "hero-banner">';
-    $headerLogo = get_stylesheet_directory_uri().'/assets/images/temp-logo.jpg';
+    $headerLogo = get_stylesheet_directory_uri().'/assets/images/ucsc-logo-no-seal-white.png';
     echo'<img class="" src="'.$headerLogo.'" alt="UCSC Logo" >';
     echo '</div>';
     echo '</div>';
