@@ -5,8 +5,7 @@
     margin-bottom: 40px;
     padding: 15px 0;
     a {
-        color: inherit;
-        border-bottom: 2px solid $ucsc--light-blue;
+        color: $ucsc--light-blue;
         &:hover,
         &:focus {
             color: $ucsc--light-blue;
@@ -14,7 +13,6 @@
         }
         &:visited {
             color: $ucsc--primary-blue;
-            border-bottom: 2px solid $ucsc--primary-blue;
         }
     }
     @include media($breakpoint__screen-size--small) {
