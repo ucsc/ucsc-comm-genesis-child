@@ -46,16 +46,40 @@ function bb_child_page_loop (){
 	wp_reset_postdata();
 	echo'</div>';
     echo '<div class="one-third">';
-    if (is_page('editorial')){
-        if ( is_active_sidebar( 'editorial-page-sidebar' ) ) :
+    if (is_page('brand-overview')){
+        if ( is_active_sidebar( 'brand-page-sidebar' ) ) :
 	    echo '<ul id="sidebar">';
-	    	dynamic_sidebar( 'editorial-page-sidebar' );
+	    	dynamic_sidebar( 'brand-page-sidebar' );
 	    echo '</ul>';
+        endif;}
+    elseif (is_page('editorial')){
+        if ( is_active_sidebar( 'editorial-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'editorial-page-sidebar' );
+        echo '</ul>';
+        endif;}
+    elseif (is_page('visual-design')){
+        if ( is_active_sidebar( 'visual-design-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'visual-design-page-sidebar' );
+        echo '</ul>';
         endif;}
     elseif (is_page('media-relations')){
         if ( is_active_sidebar( 'media-relations-page-sidebar' ) ) :
         echo '<ul id="sidebar">';
             dynamic_sidebar( 'media-relations-page-sidebar' );
+        echo '</ul>';
+        endif;}
+    elseif (is_page('social-media')){
+        if ( is_active_sidebar( 'social-media-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'social-media-page-sidebar' );
+        echo '</ul>';
+        endif;}
+    elseif (is_page('web')){
+        if ( is_active_sidebar( 'web-page-sidebar' ) ) :
+        echo '<ul id="sidebar">';
+            dynamic_sidebar( 'web-page-sidebar' );
         echo '</ul>';
         endif;}
     elseif (is_page('email')){
