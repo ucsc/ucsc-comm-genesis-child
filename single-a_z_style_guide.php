@@ -16,6 +16,11 @@ namespace UCSC\Genesis;
 
  //* Force full-width-content layout setting
  //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+ remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
+ add_action('genesis_sidebar', __NAMESPACE__ . '\bb_do_style_sidebar');
+ function bb_do_style_sidebar(){
+   dynamic_sidebar('style-guide-single-sidebar');
+ }
  //* Add Breadcrumbs
 include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 //* A-Z Style Guide Search Form
