@@ -13,7 +13,7 @@
             @include media($breakpoint__screen-size--medium) {
                 display: none;
             }
-            padding: 0;
+            padding: 100px;
             .nav-primary {
                 background-color: transparent;
                 text-align: center;
@@ -24,7 +24,7 @@
     .hero-banner-title-container {
         display: flex;
         flex-direction: column;
-        padding: 15px 0 0;
+        height: 300px;
         justify-content: center;
         align-items: center;
     }

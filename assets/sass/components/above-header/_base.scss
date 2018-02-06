@@ -1,16 +1,16 @@
 /*Top Row*/
 
 #page-top {
-    //display: none;
-    // position: fixed;
-    // text-align: initial;
-    // right: 0;
-    // left: 0;
-    // top: 0;
-    // z-index: 1000;
-    // .admin-bar & {
-    //     top: 32px;
-    // }
+    display: none;
+    position: fixed;
+    text-align: initial;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 1000;
+    .admin-bar & {
+        top: 32px;
+    }
 }
 
 .page-top {
@@ -107,10 +107,10 @@
 }
 
 button.navbar-toggle {
-    // .home & {
-    //     display: block;
-    //     margin: 0;
-    // }
+    .home & {
+        display: block;
+        margin: 0;
+    }
     display: none;
     color: $white;
     background-color: $ucsc--primary-blue;

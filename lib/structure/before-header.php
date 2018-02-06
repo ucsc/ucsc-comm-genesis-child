@@ -20,11 +20,6 @@
 	 }
  }
 
-//  function bb_top_row_select(){
-// 	add_action('genesis_before_header', __NAMESPACE__ . '\bb_add_top_row');
-// 	}
-
-
 // Front/Home Page drop-down
 function bb_add_top_row_front(){
 	$logo = get_stylesheet_directory_uri().'/assets/images/logo-abbr.png';

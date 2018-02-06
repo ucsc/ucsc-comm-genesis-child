@@ -19,27 +19,6 @@ function bb_home_hero() {
     
     echo '<div class= "hero-home" style="background:url('.$hero.') no-repeat fixed top; background-size: cover;">';
     endif;
-    
-    echo '<div class=hero-banner-title-container>';
-    // echo '<div class=hero-banner-container>';
-    // echo '<div class= "wrap">';
-    // echo '<div class= "hero-banner">';
-    // $headerLogo = get_stylesheet_directory_uri().'/assets/images/ucsc-logo-no-seal-white.png';
-    // echo'<img class="" src="'.$headerLogo.'" alt="UCSC Logo" >';
-    // echo '</div>';
-    // echo '</div>';
-    // echo '</div>';
-    echo '<div class=hero-title-container>';
-    echo '<div class= "wrap">';
-    echo '<div class= "hero-title">';
-    $headerTitle = get_bloginfo( 'name' );
-    $headerDescription = get_bloginfo( 'description' );
-    $headerUrl = get_bloginfo( 'url' );
-    
-    echo '<div class="title-area"><p class="site-title" itemprop="headline"><a href="'.$headerUrl.'">'.$headerTitle.'</a></p><p class="site-description screen-reader-text" itemprop="description">'.$headerDescription.'</p></div>';
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
     echo '<div class= "hero-nav-container">';
     echo '<div class= "wrap">';
     echo '<div class= "hero-nav">';
@@ -56,6 +35,27 @@ function bb_home_hero() {
         
         
           ) );
+    
+    echo '<div class=hero-banner-title-container>';
+    echo '<div class=hero-banner-container>';
+    echo '<div class= "wrap">';
+    echo '<div class= "hero-banner">';
+    $headerLogo = get_stylesheet_directory_uri().'/assets/images/ucsc-logo-no-seal-white.png';
+    echo'<img class="" src="'.$headerLogo.'" alt="UCSC Logo" >';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
+    echo '<div class=hero-title-container>';
+    echo '<div class= "wrap">';
+    echo '<div class= "hero-title">';
+    $headerTitle = get_bloginfo( 'name' );
+    $headerDescription = get_bloginfo( 'description' );
+    $headerUrl = get_bloginfo( 'url' );
+    
+    echo '<div class="title-area"><p class="site-title" itemprop="headline"><a href="'.$headerUrl.'">'.$headerTitle.'</a></p><p class="site-description screen-reader-text" itemprop="description">'.$headerDescription.'</p></div>';
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
     
     echo '</div>';
     echo '</div>';
