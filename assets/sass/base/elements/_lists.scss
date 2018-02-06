@@ -27,12 +27,17 @@ li {
     }
 }
 
-.fa-ul li {
-    list-style-type: none!important;
+//Font Awesome Lists
+.fa-ul {
+    margin-left: 25px!important;
+    li {
+        list-style-type: none!important;
+    }
 }
 
 .fa-file-word-o,
-.fa-chevron-circle-right {
+.fa-chevron-circle-right,
+.fa-file-pdf-o {
     color: $ucsc--blue-green;
 }
 
