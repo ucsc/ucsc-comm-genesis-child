@@ -36,6 +36,9 @@ function bb_home_hero() {
         
           ) );
     
+    echo '</div>';
+    echo '</div>';
+    echo '</div>';
     echo '<div class=hero-banner-title-container>';
     echo '<div class=hero-banner-container>';
     echo '<div class= "wrap">';
@@ -57,9 +60,6 @@ function bb_home_hero() {
     echo '</div>';
     echo '</div>';
     
-    echo '</div>';
-    echo '</div>';
-    echo '</div>';
     echo '<div class=hero-chevron-container>';
     echo '<div class= "wrap">';
     echo '<div class= "hero-chevron">';
@@ -71,5 +71,4 @@ function bb_home_hero() {
     echo '</div>';
     
 }
-
 
