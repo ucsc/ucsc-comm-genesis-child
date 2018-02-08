@@ -14,13 +14,19 @@ li {
         list-style-type: none!important;
         float: left;
         a {
+            color: $ucsc--primary-blue;
             display: block;
             text-align: center;
             padding: 0 5px;
             text-decoration: none;
             border-bottom: none;
-            &:hover,
-            &:visited {
+            &:visited,
+            &:focus {
+                border-bottom: none;
+                color: $ucsc--primary-blue;
+            }
+            &:hover {
+                color: $ucsc--light-blue;
                 border-bottom: none;
             }
         }
