@@ -12,10 +12,11 @@ This is the WordPress theme for the [UC Santa,Cruz Communicatons & Marketing](ht
 
 ## Dependencies
 
-- [Genesis framework](http://my.studiopress.com/themes/genesis/)
 - [WordPress](https://wordpress.org/download/) (preferably installed in a local environment)
+- [Genesis framework](http://my.studiopress.com/themes/genesis/)
 - [npm](https://www.npmjs.com/)
 - [Node.js](https://nodejs.org/en/)
+- [Gulp]()
 
 ## Install and build
 

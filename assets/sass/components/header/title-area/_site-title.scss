@@ -2,9 +2,9 @@
 // Site Title
 //========================
 .site-title {
-    font-family: $base--font-family;
+    font-family: $font-family--roboto-condensed;
     @include rem( font-size, $site-title--font-size);
-    font-weight: 400;
+    font-weight: 700;
     line-height: 1.2;
     a,
     a:hover,
