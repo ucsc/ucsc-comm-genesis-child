@@ -1,5 +1,8 @@
 .page-title {
     padding: 47px 0 15px;
+    @include media($breakpoint__screen-size--medium) {
+        padding: 15px 0;
+    }
     .page-title-container {
         border-bottom: 2px solid $ucsc--magenta;
     }
