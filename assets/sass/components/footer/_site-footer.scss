@@ -6,7 +6,7 @@
     border-top: 1px solid $site-footer--border-color;
     @include rem(font-size, $site-footer--font-size);
     line-height: 1.5;
-    padding: 20px 0 40px; //old: 60px 0
+    padding: 40px 16px 80px 16px; //old: 60px 0
     text-align: center;
     color: $white;
     p {
@@ -14,31 +14,62 @@
     }
     a {
         color: $white;
-        font-weight: 700;
     }
     img {
-        width: 70%;
-        padding-top: 20px;
+        // width: 70%;
+        //padding-top: 20px;
         float: left;
         @include media($breakpoint__screen-size--medium) {
             float: none;
+            margin: 0 auto;
+            display: block;
         }
     }
 }
 
 //Footer Social
-.footer-social-container,
-.footer-creds {
+.footer-social-container {
     float: right;
-    @include media($breakpoint__screen-size--medium) {
-        float: none;
+    padding-top: 20px;
+    .contact {
+        @include rem( font-size, $footer-copyright--font-size);
+        text-transform: uppercase;
+        text-decoration: underline;
     }
 }
 
 .footer-creds {
-    text-align: right;
+    float: left;
+    text-align: left;
+    text-transform: uppercase;
+    margin: 14px 0 0 20px;
+    .location,
+    .copyright {
+        font-family: $font-family--roboto-condensed;
+    }
+    .location {
+        @include rem( font-size, $footer-location--font-size);
+        font-weight: 700;
+        margin-bottom: 3px;
+    }
+    .copyright {
+        @include rem( font-size, $footer-copyright--font-size);
+        margin-bottom: 0;
+        font-weight: 400;
+    }
     @include media($breakpoint__screen-size--medium) {
         text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        padding: 20px 0 40px;
+    }
+}
+
+.footer-social-container,
+.footer-creds {
+    //float: right;
+    @include media($breakpoint__screen-size--medium) {
+        float: none;
     }
 }
 
@@ -48,7 +79,7 @@
     text-align: center;
     li {
         display: inline;
-        padding: 0 10px 0 0;
+        padding: 0 24px 0 0;
         &:last-child {
             padding: 0;
         }

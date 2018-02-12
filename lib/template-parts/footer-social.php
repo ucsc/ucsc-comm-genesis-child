@@ -5,17 +5,17 @@ if ($rows){
     echo '<ul>';
     foreach ($rows as $row) {
         if ($row['social_media_site'] == 'Facebook') :
-            $iconClass = "fa-facebook-square";
+            $iconClass = "fa-facebook";
         elseif ($row['social_media_site'] == 'Twitter') :
-                $iconClass = "fa-twitter-square";
+                $iconClass = "fa-twitter";
         elseif ($row['social_media_site'] == 'Instagram') :
                 $iconClass = "fa-instagram";
         elseif ($row['social_media_site'] == 'Pinterest') :
                 $iconClass = "fa-pinterest-p";
         elseif ($row['social_media_site'] == 'LinkedIn') :
-                $iconClass = "fa-linkedin-square";
+                $iconClass = "fa-linkedin";
         elseif ($row['social_media_site'] == 'YouTube') :
-                $iconClass = "fa-youtube-square";
+                $iconClass = "fa-youtube";
         elseif ($row['social_media_site'] == 'Vimeo') :
                 $iconClass = "fa-vimeo";
         elseif ($row['social_media_site'] == 'Flickr') :
@@ -32,7 +32,7 @@ if ($rows){
                 $iconClass = "";
         endif;
 
-            echo '<li><a href="'.$row['social_media_link'].'" title="'.$row['social_media_site'].'"><i class="fa fa-2x '.$iconClass.'" aria-hidden="true"></i></a></li>';
+            echo '<li><a href="'.$row['social_media_link'].'" title="'.$row['social_media_site'].'"><i class="fa '.$iconClass.'" aria-hidden="true"></i></a></li>';
     }
     echo '</ul>';
     echo '</div>';
