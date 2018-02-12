@@ -4,8 +4,8 @@
 .site-title {
     font-family: $font-family--roboto-condensed;
     @include rem( font-size, $site-title--font-size);
-    font-weight: 700;
     line-height: 1.2;
+    text-transform: uppercase;
     a,
     a:hover,
     a:focus {
