@@ -10,6 +10,28 @@
  */
 namespace UCSC\Communications;
 
+/**
+ * Replace WordPress jQuery with Google Hosted Libraries
+ * @author Blackbird Consulting/Jason Chafin
+ * @link https://gist.github.com/Herm71/916bc9481f62845ddc97248a871cab4a
+ */
+
+add_action('init',__NAMESPACE__ . '\bb_modify_jquery');
+
+function bb_modify_jquery(){
+    if (!is_admin()){
+        $jquery_replace = get_option('jquery_replace');
+        if ($jquery_replace == 1){         
+        
+ // deregister WordPress JQuery
+    wp_deregister_script('jquery');
+    //register and enqueue jquery
+    wp_register_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js', null, true); // register the external file  
+        wp_enqueue_script('jquery'); // enqueue the external file
+}
+    }
+}
+
 add_action( 'wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
  * Enqueue Scripts and Styles.

@@ -19,7 +19,7 @@
         // width: 70%;
         //padding-top: 20px;
         float: left;
-        @include media($breakpoint__screen-size--medium) {
+        @include media($breakpoint__screen-size--small) {
             float: none;
             margin: 0 auto;
             display: block;
@@ -30,7 +30,10 @@
 //Footer Social
 .footer-social-container {
     float: right;
-    padding-top: 20px;
+    padding-top: 15px;
+    @include media($breakpoint__screen-size--small) {
+        padding-top: 0;
+    }
     .contact {
         @include rem( font-size, $footer-copyright--font-size);
         text-transform: uppercase;
@@ -56,8 +59,11 @@
         @include rem( font-size, $footer-copyright--font-size);
         margin-bottom: 0;
         font-weight: 400;
+        @include media($breakpoint__screen-size--medium) {
+            @include rem( font-size, 12px);
+        }
     }
-    @include media($breakpoint__screen-size--medium) {
+    @include media($breakpoint__screen-size--small) {
         text-align: center;
         width: 100%;
         margin: 0 auto;
@@ -68,7 +74,7 @@
 .footer-social-container,
 .footer-creds {
     //float: right;
-    @include media($breakpoint__screen-size--medium) {
+    @include media($breakpoint__screen-size--small) {
         float: none;
     }
 }
