@@ -82,3 +82,4 @@ function blackbird_back_to_top () {
   }
 
   unregister_sidebar( 'sidebar-alt' );
+  unregister_sidebar( 'header-right' );

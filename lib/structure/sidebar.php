@@ -20,3 +20,4 @@ namespace UCSC\Communications;
 function unregister_sidebar_callbacks() {
 
 }
+

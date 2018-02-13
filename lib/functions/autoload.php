@@ -40,7 +40,7 @@ function load_nonadmin_files() {
 		'structure/before-header.php',
 		'structure/menu.php',
 		'structure/post.php',
-//		'structure/sidebar.php',
+		'structure/sidebar.php',
 		'components/customizer/customizer.php',
 	);
 
