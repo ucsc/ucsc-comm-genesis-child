@@ -20,6 +20,15 @@
  
  //* Add Breadcrumbs
  include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
+
+ //* Add Sidebar
+ remove_action('genesis_sidebar','genesis_do_sidebar');
+ add_action('genesis_sidebar', __NAMESPACE__ . '\bb_do_sm_directory_sidebar');
+ function bb_do_sm_directory_sidebar(){
+        if ( is_active_sidebar( 'social-media-directory-sidebar' ) ) :
+         dynamic_sidebar('social-media-directory-sidebar');
+        endif;
+ }
  
  //* Add Content
  remove_action( 'genesis_loop', 'genesis_do_loop' );
