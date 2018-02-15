@@ -54,6 +54,9 @@
         @include rem( font-size, $footer-location--font-size);
         font-weight: 700;
         margin-bottom: 3px;
+        @include media($breakpoint__screen-size--smaller) {
+            @include rem( font-size, 13.9px);
+        }
     }
     .copyright {
         @include rem( font-size, $footer-copyright--font-size);
@@ -61,6 +64,9 @@
         font-weight: 400;
         @include media($breakpoint__screen-size--medium) {
             @include rem( font-size, 12px);
+        }
+        @include media($breakpoint__screen-size--smaller) {
+            @include rem( font-size, 10px);
         }
     }
     @include media($breakpoint__screen-size--small) {
