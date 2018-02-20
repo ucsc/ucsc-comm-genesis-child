@@ -1,5 +1,4 @@
 <?php
-
 echo '<section class="home-page-intro">';
 echo '<div class="wrap">';
 echo '<h1 class="title">UC Santa Cruz Brand Guidelines</h1>';

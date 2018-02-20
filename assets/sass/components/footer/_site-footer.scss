@@ -55,7 +55,7 @@
         font-weight: 700;
         margin-bottom: 3px;
         @include media($breakpoint__screen-size--smaller) {
-            @include rem( font-size, 13.9px);
+            @include rem( font-size, 13.6px);
         }
     }
     .copyright {
