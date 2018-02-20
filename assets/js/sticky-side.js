@@ -6,14 +6,16 @@
  */
 
 jQuery(document).ready(function($) {
-    var offset = 500;
+    var stickyTarget = $(".un-sticky");
+    stickyDiv = "sticky";
+    offset = 350;
+    //titleHeight = $('.intro').height();
+
     $(window).scroll(function() {
-        if ($("#page-top").length) {
-            if ($(this).scrollTop() < offset) {
-                document.getElementById("page-top").style.display = "none";
-            } else {
-                document.getElementById("page-top").style.display = "block";
-            }
+        if ($(this).scrollTop() > offset) {
+            stickyTarget.addClass(stickyDiv);
+        } else {
+            stickyTarget.removeClass(stickyDiv);
         }
     });
 });

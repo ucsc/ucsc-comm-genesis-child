@@ -52,6 +52,10 @@ function enqueue_assets() {
 	//Sticky Reveal
 	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-reveal', CHILD_URL . '/assets/js/sticky-reveal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
+	//Sticky Side
+	if (is_page('media-training')){
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-side', CHILD_URL . '/assets/js/sticky-side.js', array( 'jquery' ), CHILD_THEME_VERSION, true );}
+
 	//Hide Primary Nav Menu on Mobile
 	//wp_enqueue_script( CHILD_TEXT_DOMAIN .'-hide-primary-nav', CHILD_URL . '/assets/js/hide-primary-nav-mobile.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
