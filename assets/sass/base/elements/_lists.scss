@@ -33,11 +33,16 @@ li {
     }
 }
 
+.rev-date li {
+    list-style-type: disc!important;
+}
+
 //Font Awesome Lists
 .fa-ul {
     margin-left: 25px!important;
     li {
         list-style-type: none!important;
+        margin-bottom: 40px;
     }
 }
 
