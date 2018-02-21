@@ -12,7 +12,7 @@ jQuery(document).ready(function($) {
     //titleHeight = $('.intro').height();
 
     $(window).scroll(function() {
-        if ($(this).scrollTop() > offset) {
+        if (($(this).scrollTop() > offset) && ($(window).width() > 1023)) {
             stickyTarget.addClass(stickyDiv);
         } else {
             stickyTarget.removeClass(stickyDiv);
