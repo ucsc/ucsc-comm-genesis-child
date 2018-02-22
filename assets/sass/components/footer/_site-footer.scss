@@ -10,7 +10,7 @@
     text-align: center;
     color: $white;
     p {
-        margin-bottom: 20px;
+        margin: 10px 0 20px;
     }
     a {
         color: $white;
@@ -37,7 +37,9 @@
     .contact {
         @include rem( font-size, $footer-copyright--font-size);
         text-transform: uppercase;
-        text-decoration: underline;
+        a:hover {
+            border-bottom: 2px solid $white;
+        }
     }
 }
 

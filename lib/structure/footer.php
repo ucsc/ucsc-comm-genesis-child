@@ -38,7 +38,7 @@ function bb_communications_footer (){
     
     echo '<div class="footer-social-container">';
     include CHILD_THEME_DIR.'/lib/template-parts/footer-social.php';
-    echo '<p class="contact"><a href="'.get_permalink(300).'">Contact Us</a></p>';
+    echo '<p class="contact"><a href="'.get_permalink(300).'">Contact Us</a> | <a href="'.get_permalink(2283).'">Website Feedback</a></p>';
     echo '</div>';
     echo '</div>';
 }
