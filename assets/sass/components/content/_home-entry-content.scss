@@ -1,13 +1,23 @@
 /* ## Home Entry Content
 --------------------------------------------- */
 
-.home .content {
-    section {
-        padding: 50px 0;
-        &.home-page-intro {
-            margin-top: 50px;
-            text-align: center;
+.home {
+    .content {
+        section {
+            padding: 50px 0;
+            &.home-page-intro {
+                margin-top: 50px;
+                text-align: center;
+            }
         }
+    }
+    .entry-title {
+        text-align: center;
+        margin: 50px 0;
+    }
+    .entry-content {
+        max-width: 800px;
+        margin: 0 auto;
     }
     // .home-page-intro p {
     //     @extend .intro;
