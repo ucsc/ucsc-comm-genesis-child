@@ -12,4 +12,12 @@
         color: $site-title--link-color;
         text-decoration: none;
     }
+    a span {
+        font-family: "EB Garamond", Georgia, serif;
+        color: $black;
+        text-transform: lowercase;
+        font-weight: 300;
+        font-style: italic;
+        @include rem( font-size, 22.5px);
+    }
 }

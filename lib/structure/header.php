@@ -20,3 +20,12 @@ namespace UCSC\Communications;
 function unregister_header_callbacks() {
 
 }
+function bb_custom_site_title ($title,$inside,$wrap){
+    if (!is_front_page()){
+        $newTitle = str_replace("&amp;", "<span>&amp;</span>", $title);
+        return $newTitle;
+
+    }
+}
+
+add_filter('genesis_seo_title',__NAMESPACE__ . '\bb_custom_site_title', 10, 3);
