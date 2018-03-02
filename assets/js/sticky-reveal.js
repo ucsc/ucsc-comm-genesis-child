@@ -7,13 +7,17 @@
 
 jQuery(document).ready(function($) {
     var offset = 500;
-    $(window).scroll(function() {
-        if ($("#page-top").length) {
-            if ($(this).scrollTop() < offset) {
-                document.getElementById("page-top").style.display = "none";
-            } else {
-                document.getElementById("page-top").style.display = "block";
-            }
-        }
+    $(window).resize(function() {
+        if ($(window).width() >= 1024) {
+            $(window).scroll(function() {
+                if ($("#page-top").length) {
+                    if ($(this).scrollTop() < offset) {
+                        document.getElementById("page-top").style.display = "none";
+                    } else {
+                        document.getElementById("page-top").style.display = "block";
+                    }
+                }
+            })
+        };
     });
 });
