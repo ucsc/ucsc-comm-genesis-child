@@ -11,6 +11,11 @@
     .admin-bar & {
         top: 32px;
     }
+    .home & {
+        @include media($breakpoint__screen-size--medium) {
+            display: block;
+        }
+    }
 }
 
 .page-top {
