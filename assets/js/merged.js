@@ -5,14 +5,14 @@
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
 
-/* Last merge : Wed Feb 21 09:55:54 PST 2018  */
+/* Last merge : Thu Mar 8 13:40:26 PST 2018  */
 
 /* Merging order :
 
 - blackbird-back-to-top.js
-- home-page-scroll-to-here.js
 - sticky-reveal.js
 - sticky-side.js
+- home-page-scroll-to-here.js
 - collapse.js
 - dropdown.js
 - modal.js
@@ -50,25 +50,6 @@ jQuery(document).ready(function($) {
 });
 
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-/* Merging js: home-page-scroll-to-here.js begins */
-/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
-
-
-/* 
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- * @link https://premium.wpmudev.org/blog/back-to-top-button-wordpress/
- */
-
-jQuery(document).ready(function($) {
-    $('.hero-chevron').on('click', function() {
-        var body = $("html, body");
-        body.stop().animate({ scrollTop: $('#genesis-content').offset().top }, '350');
-    });
-});
-
-/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 /* Merging js: sticky-reveal.js begins */
 /*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
 
@@ -82,14 +63,18 @@ jQuery(document).ready(function($) {
 
 jQuery(document).ready(function($) {
     var offset = 500;
-    $(window).scroll(function() {
-        if ($("#page-top").length) {
-            if ($(this).scrollTop() < offset) {
-                document.getElementById("page-top").style.display = "none";
-            } else {
-                document.getElementById("page-top").style.display = "block";
-            }
-        }
+    $(window).resize(function() {
+        if ($(window).width() >= 1024) {
+            $(window).scroll(function() {
+                if ($("#page-top").length) {
+                    if ($(this).scrollTop() < offset) {
+                        document.getElementById("page-top").style.display = "none";
+                    } else {
+                        document.getElementById("page-top").style.display = "block";
+                    }
+                }
+            })
+        };
     });
 });
 
@@ -117,6 +102,25 @@ jQuery(document).ready(function($) {
         } else {
             stickyTarget.removeClass(stickyDiv);
         }
+    });
+});
+
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+/* Merging js: home-page-scroll-to-here.js begins */
+/*- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - - */
+
+
+/* 
+ * To change this license header, choose License Headers in Project Properties.
+ * To change this template file, choose Tools | Templates
+ * and open the template in the editor.
+ * @link https://premium.wpmudev.org/blog/back-to-top-button-wordpress/
+ */
+
+jQuery(document).ready(function($) {
+    $('.hero-chevron').on('click', function() {
+        var body = $("html, body");
+        body.stop().animate({ scrollTop: $('#genesis-content').offset().top }, '350');
     });
 });
 

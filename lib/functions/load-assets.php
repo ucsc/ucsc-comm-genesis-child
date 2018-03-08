@@ -47,31 +47,28 @@ function enqueue_assets() {
 	wp_enqueue_style( 'dashicons' );
 
 	//Merged
-	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/assets/js/merged.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/assets/js/merged.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	
-	//Back To Top
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-back-to-top', CHILD_URL . '/assets/js/blackbird-back-to-top.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// //Back To Top
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-back-to-top', CHILD_URL . '/assets/js/blackbird-back-to-top.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
-	//Sticky Reveal
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-reveal', CHILD_URL . '/assets/js/sticky-reveal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// //Sticky Reveal
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-reveal', CHILD_URL . '/assets/js/sticky-reveal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
-	//Sticky Side
-	if (is_page('media-training')){
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-side', CHILD_URL . '/assets/js/sticky-side.js', array( 'jquery' ), CHILD_THEME_VERSION, true );}
+	// //Sticky Side
+	// if (is_page('media-training')){
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-side', CHILD_URL . '/assets/js/sticky-side.js', array( 'jquery' ), CHILD_THEME_VERSION, true );}
 
-	//Hide Primary Nav Menu on Mobile
-	//wp_enqueue_script( CHILD_TEXT_DOMAIN .'-hide-primary-nav', CHILD_URL . '/assets/js/hide-primary-nav-mobile.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-
-	//Home Page Scroll
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-home-page-scroll', CHILD_URL . '/assets/js/home-page-scroll-to-here.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// //Home Page Scroll
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-home-page-scroll', CHILD_URL . '/assets/js/home-page-scroll-to-here.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	
 	// FontAwesome
 	wp_enqueue_script( 'font-awesome', 'https://use.fontawesome.com/64d0d03cae.js',  null, true);
 
-	// Bootstrap components js
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-collapse', CHILD_URL . '/assets/js/collapse.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-dropdown', CHILD_URL . '/assets/js/dropdown.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-modal', CHILD_URL . '/assets/js/modal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// // Bootstrap components js
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-collapse', CHILD_URL . '/assets/js/collapse.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-dropdown', CHILD_URL . '/assets/js/dropdown.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-modal', CHILD_URL . '/assets/js/modal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
 	$localized_script_args = array(
 		'mainMenu' => __( 'Menu', CHILD_TEXT_DOMAIN ),

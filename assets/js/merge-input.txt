@@ -1,7 +1,7 @@
 blackbird-back-to-top.js
-home-page-scroll-to-here.js
 sticky-reveal.js
 sticky-side.js
+home-page-scroll-to-here.js
 collapse.js
 dropdown.js
 modal.js
