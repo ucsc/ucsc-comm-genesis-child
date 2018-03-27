@@ -39,6 +39,7 @@ include CHILD_THEME_DIR.'/lib/template-parts/style-guide-search-form.php';
     echo '<div class="entry-content">';
     echo $pageContentFormatted;
     echo '<div class="clear"></div>';
+    echo '<div class="two-thirds first">';
     echo '<hr>';
     // Call Post
     $args = array (
@@ -67,6 +68,7 @@ include CHILD_THEME_DIR.'/lib/template-parts/style-guide-search-form.php';
         endwhile;
     endif;
     wp_reset_postdata();
+    echo '</div>';
     echo '</div>';
     echo '</article>';
  }
