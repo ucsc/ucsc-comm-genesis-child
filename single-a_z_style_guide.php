@@ -19,7 +19,9 @@ namespace UCSC\Genesis;
  remove_action( 'genesis_sidebar', 'genesis_do_sidebar' );
  add_action('genesis_sidebar', __NAMESPACE__ . '\bb_do_style_sidebar');
  function bb_do_style_sidebar(){
+   echo '<div class="un-sticky">';
    dynamic_sidebar('style-guide-single-sidebar');
+   echo '</div>';
  }
  //* Add Breadcrumbs
 include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
