@@ -14,9 +14,10 @@
     }
     a span {
         font-family: "EB Garamond", Georgia, serif;
-        color: $black;
+        color: #333;
         text-transform: lowercase;
         font-weight: 500;
+        font-style: italic;
         @include rem( font-size, 30px);
     }
 }
