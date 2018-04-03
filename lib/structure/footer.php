@@ -24,12 +24,15 @@ function bb_customize_footer (){
 
 function bb_communications_footer (){
     $footerLogo = get_stylesheet_directory_uri().'/assets/images/seal.png';
-    $copywright = do_shortcode('[footer_copyright first="2017"]');
+    $copywright = do_shortcode('[footer_copyright]');
+    $bb_time = get_the_time('U'); 
+    $bb_modified_time = get_the_modified_time('U');
+    //$lastmodified = do_shortcode('[last-modified-date]');
     echo '<div class="two-thirds first">';
     
     echo'<img class="" src="'.$footerLogo.'" alt="UCSC Logo" >';
     echo '<div class="footer-creds">';
-    $copywright = do_shortcode('[footer_copyright]');
+    //$copywright = do_shortcode('[footer_copyright]');
     echo '<p class="location">UC Santa Cruz, 1156 High Street, Santa Cruz, CA  95064</p><p class="copyright">'.$copywright.' Regents of the University of California. All Rights Reserved.</p>';
     echo '</div>';
     echo '<div class="clear"></div>';
@@ -41,6 +44,12 @@ function bb_communications_footer (){
     echo '<p class="contact"><a href="'.get_permalink(300).'">Contact Us</a> | <a href="'.get_permalink(2283).'">Website Feedback</a></p>';
     echo '</div>';
     echo '</div>';
+    if ($bb_modified_time >= $bb_time + 86400) {
+        echo '<div class="clear"></div>';
+        echo '<div class="page-meta"><p>Last modified: ';
+        the_modified_time('F jS, Y');
+        echo '</p></div>';
+        }
 }
 
 

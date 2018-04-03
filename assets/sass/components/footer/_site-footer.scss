@@ -103,3 +103,25 @@
         }
     }
 }
+
+.page-meta {
+    margin-top: 4em;
+    @include media($breakpoint__screen-size--medium) {
+        margin-top: 2em;
+    }
+    @include media($breakpoint__screen-size--smaller) {
+        margin-top: 1em;
+    }
+    p {
+        font-family: $font-family--roboto-condensed;
+        font-style: italic;
+        text-transform: uppercase;
+        @include rem( font-size, $footer-copyright--font-size);
+        @include media($breakpoint__screen-size--medium) {
+            @include rem( font-size, 12px);
+        }
+        @include media($breakpoint__screen-size--smaller) {
+            @include rem( font-size, 10px);
+        }
+    }
+}
