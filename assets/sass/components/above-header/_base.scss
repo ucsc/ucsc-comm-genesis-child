@@ -21,17 +21,10 @@
 .page-top {
     background-color: $ucsc--light-blue;
     @include box-shadow(0 2px 4px 0 rgba(0, 0, 0, .5));
-    //transition: all 1000ms ease;
-    // display: none;
-    // position: fixed;
     text-align: initial;
-    // right: 0;
-    // left: 0;
-    // top: 0;
-    // z-index: 1000;
-    // .admin-bar & {
-    //     top: 32px;
-    // }
+    &.front-top {
+        background-color: $ucsc--light-blue;
+    }
     .top-row {
         margin-top: 0;
         margin-bottom: 0;
@@ -115,10 +108,11 @@ button.navbar-toggle {
     .home & {
         display: block;
         margin: 0;
+        background-color: $ucsc--light-blue;
     }
     display: none;
     color: $white;
-    background-color: $ucsc--primary-blue;
+    background-color: $ucsc--light-blue;
     float: right;
     padding: 0 12px;
     margin: 5px 0;
