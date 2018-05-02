@@ -47,7 +47,7 @@ function enqueue_assets() {
 	wp_enqueue_style( 'dashicons' );
 
 	//Merged
-	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/assets/js/merged.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+	wp_enqueue_script( CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/assets/js/merged.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 	
 	// Back To Top
 	// wp_enqueue_script( CHILD_TEXT_DOMAIN .'-back-to-top', CHILD_URL . '/assets/js/blackbird-back-to-top.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
