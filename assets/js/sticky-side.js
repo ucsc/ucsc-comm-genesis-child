@@ -8,13 +8,10 @@
 jQuery(document).ready(function($) {
     // target and cache the element
     var stickyTarget = $(".un-sticky");
-
     // set up un-sticky-wrap
     var stickyWrap = $("<div class='un-sticky-wrap'></div>");
-
     // Wrap .un-sticky in a div
     $(stickyTarget).wrap(stickyWrap);
-
     // find the original un-sticky position
     var stickyPos = stickyTarget.offset().top;
     var stickyClass = "sticky";
