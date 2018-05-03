@@ -9,19 +9,28 @@ jQuery(document).ready(function($) {
     // target and cache the element
     var stickyTarget = $(".un-sticky");
 
+    // set up un-sticky-wrap
+    var stickyWrap = $("<div class='un-sticky-wrap'></div>");
+
+    // Wrap .un-sticky in a div
+    $(stickyTarget).wrap(stickyWrap);
+
     // find the original un-sticky position
     var stickyPos = stickyTarget.offset().top;
-    var stickyDiv = "sticky";
-    //offset = 500;
+    var stickyClass = "sticky";
 
     $(window).scroll(function() {
         //get scroll position from top of the page
         var scrollPos = $(this).scrollTop();
         // check if scroll position is >= un-sticky position
         if ((scrollPos >= stickyPos) && ($(window).width() > 1023)) {
-            stickyTarget.addClass(stickyDiv);
+            $(".un-sticky-wrap").height($(".un-sticky").outerHeight());
+            stickyTarget.addClass(stickyClass);
+            $(".sticky").width($(".un-sticky").width());
         } else {
-            stickyTarget.removeClass(stickyDiv);
+            $(".un-sticky-wrap").height(0);
+            stickyTarget.removeClass(stickyClass);
+            $(".sticky").width(0);
         }
     });
 });
