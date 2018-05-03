@@ -6,19 +6,13 @@
  */
 
 jQuery(document).ready(function($) {
-    // target and cache the element
     var stickyTarget = $(".un-sticky");
-
-    // find the original un-sticky position
-    var stickyPos = stickyTarget.offset().top;
-    var stickyDiv = "sticky";
-    //offset = 500;
+    stickyDiv = "sticky";
+    offset = 500;
+    //titleHeight = $('.intro').height();
 
     $(window).scroll(function() {
-        //get scroll position from top of the page
-        var scrollPos = $(this).scrollTop();
-        // check if scroll position is >= un-sticky position
-        if ((scrollPos >= stickyPos) && ($(window).width() > 1023)) {
+        if (($(this).scrollTop() > offset) && ($(window).width() > 1023)) {
             stickyTarget.addClass(stickyDiv);
         } else {
             stickyTarget.removeClass(stickyDiv);
