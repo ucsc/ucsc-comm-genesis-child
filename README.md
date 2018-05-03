@@ -50,7 +50,7 @@ npm -v
 
 ### Install dependencies (Gulp, Bourbon, Neat, et al)
 
-Now that you've installed NPM, use it to install the node modules in order to run gulp. To do that, navigate into your working `/theme/` directory in your terminal and type:
+Now that you've installed NPM, use it to install the node modules in order to run gulp. The node modules are defined and included in the `package.json` file. To install node modules, navigate into your working `/theme/` directory in your terminal and type:
 
 ```console
 npm install
@@ -60,7 +60,19 @@ Wait several minutes for the installation to complete and you're in business!
 
 ## Gulp tasks
 
-Coming soon
+There are two Gulp tasks defined in the `gulpfile.js` file:
+
+There is no `style.css` file in this repo. The **gulp styles** task will build your `style.css` file based on the SASS files, which are located in `/assets/sass/`. This task will also created minified styles, saved as `styles.min.css`.
+
+```console
+gulp styles
+```
+
+The **gulp watch** task will continuously watch your `/assets/sass/` directory and rebuild your styles every time you save a SASS file.
+
+```console
+gulp watch
+```
 
 ## Additional Requirements
 
