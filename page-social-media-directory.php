@@ -14,10 +14,10 @@
 
  //* Force full-width-content layout setting
  //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
- 
+
  //* Move Post Title and Post Info from inside Entry Header to Entry Content on Posts page
  include CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
- 
+
  //* Add Breadcrumbs
  include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 
@@ -29,11 +29,11 @@
          dynamic_sidebar('social-media-directory-sidebar');
         endif;
  }
- 
+
  //* Add Content
  remove_action( 'genesis_loop', 'genesis_do_loop' );
  add_action( 'genesis_loop', __NAMESPACE__ .'\bb_social_media_directory_loop' );
- 
+
 function bb_social_media_directory_loop()
 {
     $pageContent = get_the_content();
@@ -44,11 +44,11 @@ function bb_social_media_directory_loop()
     // Call Post
     $args = array (
     'post_type' => 's_m_directory',
-    'meta_key' => 'sticky',
+    'meta_key' => 'sticky title',
     'orderby' => 'meta_value',
     'order' => 'ASC',
     'posts_per_page' => -1,
-       
+
     );
     $smDir = new \WP_Query( $args );
     if ($smDir->have_posts()) :
@@ -91,7 +91,7 @@ function bb_social_media_directory_loop()
                     elseif ($row['social_media_site'] == 'Choose one') :
                             $iconClass = "";
                     endif;
-           
+
                         echo '<li><a href="'.$row['social_media_link'].'" title="'.$row['social_media_site'].'"><i class="fa '.$iconClass.'" aria-hidden="true"></i></a></li>';
                 }
                  echo '</ul>';
