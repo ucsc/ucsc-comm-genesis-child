@@ -1,0 +1,42 @@
+{
+	"core": null,
+	"plugins": [
+		"https://downloads.wordpress.org/plugin/theme-check.20211203.zip",
+		"https://downloads.wordpress.org/plugin/wordpress-importer.0.7.zip",
+		"https://downloads.wordpress.org/plugin/social-sharing-block.0.4.0.zip",
+		"https://downloads.wordpress.org/plugin/user-switching.1.5.8.zip"
+	],
+	"themes": [
+		"~/Projects/communications-ucsc/wp-content/themes/genesis"
+	],
+	"mappings": {
+		"wp-content/plugins": "./plugins",
+		"wp-content/plugins/advanced-custom-fields-pro": "~/Projects/acf-plugin/advanced-custom-fields-pro",
+		"wp-content/plugins/ucsc-communications-core-functionality-plugin": "~/Projects/communications-ucsc/wp-content/plugins/ucsc-communications-core-functionality-plugin",
+		"wp-content/plugins/acf-better-search": "~/Projects/communications-ucsc/wp-content/plugins/acf-better-search",
+		"wp-content/plugins/acf-repeater": "~/Projects/communications-ucsc/wp-content/plugins/acf-repeater",
+		"wp-content/mu-plugins": "./mu-plugins"
+	},
+	"env": {
+		"tests": {
+			"themes": [
+				"~/Projects/themes-wordpress/theme-ucsc/ucsc.zip"
+			]
+		},
+		"development": {
+			".htaccess": ".htaccess",
+			"themes": [
+				"~/Projects/themes-wordpress/ucsc-2022"
+			]
+		}
+	},
+	"phpVersion": "7.4",
+	"config": {
+		"FS_METHOD": "direct",
+		"WP_MEMORY_LIMIT": "20M",
+		"WP_MAX_MEMORY_LIMIT": "15M",
+		"WP_UPLOAD_MAX_FILESIZE": "10M",
+		"WP_ALLOW_MULTISITE": "true",
+		"WP_ENVIRONMENT_TYPE": "local"
+	}
+}

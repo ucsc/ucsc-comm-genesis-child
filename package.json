@@ -12,7 +12,8 @@
         "lint:style": "wp-scripts lint-style 'src/scss/**/*.scss'",
         "packages-update": "wp-scripts packages-update",
         "postpackages-update": "npm run build",
-        "format:src": "wp-scripts format ./src"
+		"format:src": "wp-scripts format ./src",
+		"wp-env": "wp-env"
     },
     "repository": {
         "type": "git",
@@ -25,6 +26,7 @@
     },
     "homepage": "https://github.com/ucsc/ucsc-comm-genesis-child/#README.md",
     "devDependencies": {
+		"@wordpress/env": "^4.6.0",
         "@wordpress/scripts": "^22.4.0",
         "standard-version": "^9.3.2"
     }
