@@ -1,0 +1,27 @@
+/*!
+    Theme Name: UC Santa Cruz Communications and Marketing
+    Theme URI: https://www.blackbirdconsult.com
+
+	Description: The Genesis-powered Developer's Starter Child Theme
+	Author: Blackbird Consulting
+	Author URI: http://www.blackbirdconsult.com/
+
+	Version: 1.0.0
+
+
+	Template: genesis
+	Template Version: 2.2.3
+
+	License: GPL-2.0+
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+
+	Text Domain: ucsantacruz
+*/
+
+@import 'utilities/index';
+@import 'base/index';
+@import 'layouts/index';
+@import 'components/index';
+@import 'plugins/index';
+@import 'views/index';
+@import 'bootstrap/index';

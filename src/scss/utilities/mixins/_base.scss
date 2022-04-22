@@ -1,0 +1,39 @@
+//
+// Mixins
+//============================
+@mixin border-radius($radius) {
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+
+@mixin box-shadow ($shadow) {
+	-webkit-box-shadow: $shadow;
+	-moz-box-shadow: $shadow;
+	-ms-box-shadow: $shadow;
+	box-shadow: $shadow;
+}
+
+@mixin collapse {
+	display: none;
+}
+
+// Rem output with px fallback
+@mixin font-size($sizeValue: 1.6) {
+	font-size: ($sizeValue * 10) + px;
+	font-size: $sizeValue + rem;
+}
+
+// Use media queries like this:
+// @include media-query($on-palm) {
+//   .wrapper {
+//     padding-right: $spacing-unit / 2;
+//     padding-left: $spacing-unit / 2;
+//   }
+// }
+@mixin media-query($device) {
+	@media screen and (min-width: $device) {
+		@content;
+	}
+}

@@ -1,0 +1,39 @@
+/* ## Entry Content
+--------------------------------------------- */
+
+.entry-content {
+
+    ol,
+    ul {
+        margin-bottom: 28px;
+        margin-left: 40px;
+    }
+
+    ol > li {
+        list-style-type: decimal;
+        margin: 0 0 12px;
+    }
+
+    ul > li {
+        list-style-type: disc;
+        margin: 0 0 12px;
+    }
+
+    ol ol,
+    ul ul {
+        margin-bottom: 0;
+    }
+
+    code {
+        background-color: $entry-content__code--background-color;
+        color: $entry-content__code--color;
+    }
+}
+
+.intro {
+    //font-family: $font-family--roboto-slab;
+    @include font-size($intro--font-size);
+    font-weight: 300;
+    line-height: 1.25;
+    color: $ucsc--primary-blue;
+}
