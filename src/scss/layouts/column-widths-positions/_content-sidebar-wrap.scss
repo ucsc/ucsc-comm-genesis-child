@@ -6,11 +6,11 @@
   .sidebar-sidebar-content & {
     width: $content-sidebar-wrap--width;
 
-     @include media( $breakpoint__screen-size--larger ) {
+    @include media-query($breakpoint__screen-size--larger) {
       width: $content-sidebar-wrap--width-larger-screen;
     }
 
-     @include media( $breakpoint__screen-size--large ) {
+    @include media-query($breakpoint__screen-size--large) {
       width: $content-sidebar-wrap--width-large-screen;
     }
   }

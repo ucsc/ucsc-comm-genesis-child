@@ -25,7 +25,7 @@
         visibility: visible;
         height: auto;
         overflow: visible;
-        @include media($breakpoint__screen-size--medium) {
+        @include media-query($breakpoint__screen-size--medium) {
             @include collapse;
         }
     }

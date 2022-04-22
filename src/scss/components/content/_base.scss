@@ -18,7 +18,7 @@
             color: $ucsc--primary-blue;
         }
     }
-    @include media($breakpoint__screen-size--small) {
+    @include media-query($breakpoint__screen-size--small) {
         //padding: 30px;
         margin-bottom: 5%;
     }

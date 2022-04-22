@@ -13,13 +13,13 @@ body {
     text-rendering: optimizeLegibility;
     line-height: $base--line-height;
     margin: 0;
-    @include media( $breakpoint__screen-size--small) {
+	@include media-query($breakpoint__screen-size--small) {
         font-size: $base--font-size--small-screen-width;
     }
     /* Chrome fix */
     >div {
         font-size: $base__div--font-size;
-        @include media( $breakpoint__screen-size--small) {
+		@include media-query($breakpoint__screen-size--small) {
             font-size: $base__div--font-size--small-screen-width;
         }
     }

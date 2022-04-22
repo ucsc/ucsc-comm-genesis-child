@@ -1,6 +1,6 @@
 .page-title {
     padding: 47px 0 15px;
-    @include media($breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         padding: 15px 0;
     }
     .page-title-container {

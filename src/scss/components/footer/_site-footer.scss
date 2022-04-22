@@ -23,7 +23,7 @@
         //padding-top: 20px;
         float: left;
 
-        @include media($breakpoint__screen-size--small) {
+        @include media-query($breakpoint__screen-size--small) {
             float: none;
             margin: 0 auto;
             display: block;
@@ -36,7 +36,7 @@
     float: right;
     padding-top: 15px;
 
-    @include media($breakpoint__screen-size--small) {
+    @include media-query($breakpoint__screen-size--small) {
         padding-top: 0;
     }
 
@@ -66,7 +66,7 @@
         font-weight: 700;
         margin-bottom: 3px;
 
-        @include media($breakpoint__screen-size--smaller) {
+        @include media-query($breakpoint__screen-size--smaller) {
             @include font-size(13.6px);
         }
     }
@@ -76,16 +76,16 @@
         margin-bottom: 0;
         font-weight: 400;
 
-        @include media($breakpoint__screen-size--medium) {
+        @include media-query($breakpoint__screen-size--medium) {
             @include font-size(12px);
         }
 
-        @include media($breakpoint__screen-size--smaller) {
+        @include media-query($breakpoint__screen-size--smaller) {
             @include font-size(10px);
         }
     }
 
-    @include media($breakpoint__screen-size--small) {
+    @include media-query($breakpoint__screen-size--small) {
         text-align: center;
         width: 100%;
         margin: 0 auto;
@@ -97,7 +97,7 @@
 .footer-creds {
 
     //float: right;
-    @include media($breakpoint__screen-size--small) {
+    @include media-query($breakpoint__screen-size--small) {
         float: none;
     }
 }
@@ -125,11 +125,11 @@
 .page-meta {
     margin-top: 4em;
 
-    @include media($breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         margin-top: 2em;
     }
 
-    @include media($breakpoint__screen-size--smaller) {
+    @include media-query($breakpoint__screen-size--smaller) {
         margin-top: 1em;
     }
 
@@ -139,11 +139,11 @@
         text-transform: uppercase;
         @include font-size($footer-copyright--font-size);
 
-        @include media($breakpoint__screen-size--medium) {
+        @include media-query($breakpoint__screen-size--medium) {
             @include font-size(12px);
         }
 
-        @include media($breakpoint__screen-size--smaller) {
+        @include media-query($breakpoint__screen-size--smaller) {
             @include font-size(10px);
         }
     }
