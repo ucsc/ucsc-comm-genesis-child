@@ -27,7 +27,7 @@
 
 .intro {
     //font-family: $font-family--roboto-slab;
-    @include rem( font-size, $intro--font-size);
+    @include font-size($intro--font-size);
     font-weight: 300;
     line-height: 1.25;
     color: $ucsc--primary-blue;

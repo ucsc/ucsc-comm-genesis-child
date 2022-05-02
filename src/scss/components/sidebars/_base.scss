@@ -10,7 +10,7 @@
 
 .sidebar-spacer {
     padding-left: 40px;
-    @include media($breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         padding-left: 0px;
     }
 }

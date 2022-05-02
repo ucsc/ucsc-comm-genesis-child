@@ -2,7 +2,7 @@
 //====================
 .menu-alpha-menu-container {
     padding: 0 0 10px 0;
-    @include media($breakpoint__screen-size--smaller) {
+    @include media-query($breakpoint__screen-size--smaller) {
         display: none;
     }
     ul {
@@ -37,7 +37,7 @@
 
 .menu-alpha-menu-mobile-container {
     display: none;
-    @include media($breakpoint__screen-size--smaller) {
+    @include media-query($breakpoint__screen-size--smaller) {
         display: block;
     }
     button {

@@ -12,6 +12,6 @@
   }
 
   .entry-title {
-    @include rem( font-size, $featured-content__entry-title--font-size );
+    @include font-size($featured-content__entry-title--font-size);
   }
 }

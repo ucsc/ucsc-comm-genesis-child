@@ -6,7 +6,7 @@ blockquote {
     &::before {
         content: "\201C";
         display: block;
-        @include rem( font-size, $blockquote--font-size);
+        @include font-size($blockquote--font-size);
         height: 0;
         left: -26px; //-20px;
         position: relative;

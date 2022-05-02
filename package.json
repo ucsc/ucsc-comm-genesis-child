@@ -2,11 +2,10 @@
   "name": "ucsc-comm-genesis-child",
   "version": "1.0.0",
   "description": "Npm for Communications",
-  "main": "index.js",
+  "main": "build/index.js",
   "directories": {
     "lib": "lib"
   },
-  "dependencies": {},
   "devDependencies": {
     "@wordpress/scripts": "^22.5.0",
     "install-peers": "^1.0.3",

@@ -15,25 +15,25 @@ h6 {
 }
 
 h1 {
-    @include rem( font-size, $h1--font-size);
+    @include font-size($h1--font-size);
 }
 
 h2 {
-    @include rem( font-size, $h2--font-size);
+    @include font-size($h2--font-size);
 }
 
 h3 {
-    @include rem( font-size, $h3--font-size);
+    @include font-size($h3--font-size);
 }
 
 h4 {
-    @include rem( font-size, $h4--font-size);
+    @include font-size($h4--font-size);
 }
 
 h5 {
-    @include rem( font-size, $h5--font-size);
+    @include font-size($h5--font-size);
 }
 
 h6 {
-    @include rem( font-size, $h6--font-size);
+    @include font-size($h6--font-size);
 }

@@ -16,7 +16,7 @@
             //border-bottom: 2px solid $ucsc--primary-blue;
         }
     }
-    @include media($breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         .alignleft {
             display: block;
             margin: 0 auto 24px;

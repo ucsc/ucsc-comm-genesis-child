@@ -15,7 +15,7 @@
         .site-header & {
             float: right;
             margin: 12px auto 0;
-            @include media($breakpoint__screen-size--medium) {
+            @include media-query($breakpoint__screen-size--medium) {
                 float: none;
                 margin: 16px auto;
             }
@@ -82,7 +82,7 @@
     
     .left.search {
         display: none;
-        @include media($breakpoint__screen-size--medium) {
+        @include media-query($breakpoint__screen-size--medium) {
             display: block;
             padding-top: 10px;
         }

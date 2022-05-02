@@ -2,7 +2,7 @@
 // Entry Title
 //======================
 .entry-title {
-    @include rem( font-size, $entry-title--font-size);
+    @include font-size($entry-title--font-size);
     margin-bottom: 0;
     font-family: $font-family--eb-garamond;
     .page-title & {

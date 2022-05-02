@@ -5,12 +5,12 @@
     height: 100vh;
     background-size: cover;
     min-height: 500px;
-    @include media($breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         //height: 50vh;
     }
     .hero-nav-container {
         .hero-nav {
-            @include media($breakpoint__screen-size--medium) {
+            @include media-query($breakpoint__screen-size--medium) {
                 display: none;
             }
             padding: 100px;
@@ -29,7 +29,7 @@
         align-items: center;
     }
     .hero-banner-container {
-        @include media($breakpoint__screen-size--medium) {
+        @include media-query($breakpoint__screen-size--medium) {
             display: none;
         }
         background-color: $ucsc--primary-blue;
@@ -49,7 +49,7 @@
                 text-align: center;
                 font-weight: 300;
                 text-transform: uppercase;
-                @include rem( font-size, $hero-site-title--font-size);
+                @include font-size($hero-site-title--font-size);
                 a {
                     color: $ucsc--primary-blue;
                 }

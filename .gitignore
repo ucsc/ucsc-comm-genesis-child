@@ -15,9 +15,11 @@ style.min.css
 .sass-cache/
 
 # Development files
-/node_modules
-/assets/vendor/
-
+node_modules
+assets/vendor/
+vendor/
+build/
+node_modules/
 .idea/
 
 # Rsync exclude file and scripts

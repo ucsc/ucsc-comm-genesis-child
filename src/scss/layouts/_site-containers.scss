@@ -5,13 +5,13 @@
 .wrap {
     margin: 0 auto;
     max-width: $max-width;
-    @include media( $breakpoint__screen-size--larger) {
+    @include media-query($breakpoint__screen-size--larger) {
         max-width: $max-width--larger-screen;
     }
-    @include media( $breakpoint__screen-size--large) {
+    @include media-query($breakpoint__screen-size--large) {
         max-width: $max-width--large-screen;
     }
-    @include media( $breakpoint__screen-size--medium) {
+    @include media-query($breakpoint__screen-size--medium) {
         max-width: $max-width--medium-screen;
     }
 }
@@ -21,7 +21,7 @@
     //padding-top: 40px;
     word-wrap: break-word;
     //background: url('assets/images/tessellation-bg-03.png') no-repeat right bottom;
-    @include media( $breakpoint__screen-size--smaller) {
+    @include media-query($breakpoint__screen-size--smaller) {
         padding: 5% 5% 0;
     }
     .page &,
@@ -30,7 +30,7 @@
     }
 }
 
-@include media( $breakpoint__screen-size--small) {
+@include media-query($breakpoint__screen-size--small) {
     .wrap {
         padding-left: 5%;
         padding-right: 5%;
