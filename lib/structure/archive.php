@@ -2,11 +2,11 @@
 /**
  * Archive HTML markup structure
  *
- * @package     UCSC\Communications
- * @since       1.0.0
- * @author      Blackbird Consulting
- * @link        https://www.blackbirdconsult.com
- * @license     GNU General Public License 2.0+
+ * @package UCSC\Communications
+ * @since   1.0.0
+ * @author  Blackbird Consulting
+ * @link    https://www.blackbirdconsult.com
+ * @license GNU General Public License 2.0+
  */
 namespace UCSC\Communications;
 
@@ -17,6 +17,7 @@ namespace UCSC\Communications;
  *
  * @return void
  */
-function unregister_archive_callbacks() {
+function unregister_archive_callbacks()
+{
 
 }

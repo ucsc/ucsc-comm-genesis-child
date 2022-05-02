@@ -10,15 +10,15 @@
  */
  namespace UCSC\Genesis;
  //* Force full-width-content layout setting
-add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
+add_filter('genesis_pre_get_option_site_layout', '__genesis_return_full_width_content');
 
 //* Move Post Title and Post Info from inside Entry Header to Entry Content on Posts page
-include CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
+require CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
 
 //* Add Breadcrumbs
-include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
+require CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 
 //* Add Content
-include CHILD_THEME_DIR.'/lib/template-parts/child-page-loop.php';
+require CHILD_THEME_DIR.'/lib/template-parts/child-page-loop.php';
 
 genesis();

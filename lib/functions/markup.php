@@ -2,11 +2,11 @@
 /**
  * Description
  *
- * @package     UCSC\Communications
- * @since       1.0.0
- * @author      Blackbird Consulting
- * @link        https://www.blackbirdconsult.com
- * @license     GNU General Public License 2.0+
+ * @package UCSC\Communications
+ * @since   1.0.0
+ * @author  Blackbird Consulting
+ * @link    https://www.blackbirdconsult.com
+ * @license GNU General Public License 2.0+
  */
 namespace UCSC\Communications;
 
@@ -37,8 +37,8 @@ namespace UCSC\Communications;
 //     $pageContentFormatted = apply_filters('the_content', $pageContent);
 //     $args = array(
 //         'post_parent' => $id,
-// 		'post_type' => 'page',
-// 		'posts_per_page' => -1,
+//         'post_type' => 'page',
+//         'posts_per_page' => -1,
 //         'orderby' => 'menu_order'
 //     );
     
@@ -49,31 +49,31 @@ namespace UCSC\Communications;
 //     echo '<div class="two-thirds first">'; 
     
 //         while ( $child_query->have_posts() ) : $child_query->the_post();
-// 		$pagePermalink = get_permalink($post->ID);
-// 		$pageTitle = get_the_title($post->ID);
+//         $pagePermalink = get_permalink($post->ID);
+//         $pageTitle = get_the_title($post->ID);
 //         $pageImage = get_the_post_thumbnail( $post_id, 'thumbnail', array( 'class' => 'alignleft' ) );
         
-// 		$pageExcerpt = get_the_excerpt();
-		
+//         $pageExcerpt = get_the_excerpt();
+        
 //         echo '<div class="one-fourth first">';  
             
 //             if ( has_post_thumbnail() ) {
 //                 the_post_thumbnail('subpage-featured-image');
-// 			}
-// 		echo '</div>';
-// 		echo '<div class="three-fourths">';   
+//             }
+//         echo '</div>';
+//         echo '<div class="three-fourths">';   
 //         echo '<h3><a href="'.$pagePermalink.'" rel="bookmark" title="'.$pageTitle.'">'.$pageTitle.'</a></h3>';
 //         echo $pageExcerpt;
 //         echo'</div>';
 //     endwhile; 
     
-// 	wp_reset_postdata();
-// 	echo'</div>';
-// 	echo '<div class="one-third">';
+//     wp_reset_postdata();
+//     echo'</div>';
+//     echo '<div class="one-third">';
 //     if ( is_active_sidebar( 'sidebar' ) ) :
-// 	echo '<ul id="sidebar">';
-// 		dynamic_sidebar( 'sidebar' );
-// 	echo '</ul>';
+//     echo '<ul id="sidebar">';
+//         dynamic_sidebar( 'sidebar' );
+//     echo '</ul>';
 //     endif; 
 //     echo '</div>';
 //     echo '</div>';

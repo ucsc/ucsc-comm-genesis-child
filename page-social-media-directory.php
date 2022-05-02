@@ -16,23 +16,24 @@
  //add_filter( 'genesis_pre_get_option_site_layout', '__genesis_return_full_width_content' );
 
  //* Move Post Title and Post Info from inside Entry Header to Entry Content on Posts page
- include CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
+ require CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
 
  //* Add Breadcrumbs
- include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
+ require CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 
  //* Add Sidebar
- remove_action('genesis_sidebar','genesis_do_sidebar');
+ remove_action('genesis_sidebar', 'genesis_do_sidebar');
  add_action('genesis_sidebar', __NAMESPACE__ . '\bb_do_sm_directory_sidebar');
- function bb_do_sm_directory_sidebar(){
-        if ( is_active_sidebar( 'social-media-directory-sidebar' ) ) :
-         dynamic_sidebar('social-media-directory-sidebar');
-        endif;
- }
+function bb_do_sm_directory_sidebar()
+{
+    if (is_active_sidebar('social-media-directory-sidebar') ) :
+        dynamic_sidebar('social-media-directory-sidebar');
+    endif;
+}
 
  //* Add Content
- remove_action( 'genesis_loop', 'genesis_do_loop' );
- add_action( 'genesis_loop', __NAMESPACE__ .'\bb_social_media_directory_loop' );
+ remove_action('genesis_loop', 'genesis_do_loop');
+ add_action('genesis_loop', __NAMESPACE__ .'\bb_social_media_directory_loop');
 
 function bb_social_media_directory_loop()
 {
@@ -50,7 +51,7 @@ function bb_social_media_directory_loop()
     'posts_per_page' => -1,
 
     );
-    $smDir = new \WP_Query( $args );
+    $smDir = new \WP_Query($args);
     if ($smDir->have_posts()) :
         while ($smDir->have_posts()) :
             $smDir->the_post();

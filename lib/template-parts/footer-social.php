@@ -1,6 +1,6 @@
 <?php
-$rows = get_field('social_media_property','option');
-if ($rows){
+$rows = get_field('social_media_property', 'option');
+if ($rows) {
         echo '<div class="footer-social">';
     echo '<ul>';
     foreach ($rows as $row) {

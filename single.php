@@ -16,6 +16,6 @@
 //include CHILD_THEME_DIR.'/lib/template-parts/set-up-page-header.php';
 
 //* Add Breadcrumbs
-include CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
+require CHILD_THEME_DIR.'/lib/template-parts/breadcrumbs.php';
 
 genesis();
