@@ -1,31 +1,35 @@
 {
-    "name": "developers",
-    "version": "1.0.0",
-    "description": "This is a developer-friendly starter child theme for the [Genesis theming framework](http://my.studiopress.com/themes/genesis/) which includes a modular architecture, Sass, gulp, Bourbon, Neat, and Composer.  It is your starting child theme for all of your projects to save you time and moola.",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/KnowTheCode/Genesis-Developers-Starter-Theme.git"
-    },
-    "author": "Blackbird Consulting",
-    "license": "GPL-2",
-    "bugs": {
-        "url": "https://github.com/KnowTheCode/Genesis-Developers-Starter-Theme/issues"
-    },
-    "homepage": "https://github.com/KnowTheCode/Genesis-Developers-Starter-Theme#readme",
-    "devDependencies": {
-        "autoprefixer": "^6.7.6",
-        "bourbon": "^4.2.6",
-        "bourbon-neat": "^1.7.2",
-        "css-mqpacker": "^5.0.1",
-        "gulp": "^4.0.0",
-        "gulp-cssnano": "^2.1.2",
-        "gulp-notify": "^2.2.0",
-        "gulp-plumber": "^1.1.0",
-        "gulp-postcss": "^6.1.1",
-        "gulp-rename": "^1.2.2",
-        "gulp-sass": "^2.3.2",
-        "gulp-sass-lint": "^1.2.0",
-        "gulp-sourcemaps": "^1.6.0",
-        "sass-rem": "^1.2.2"
-    }
+  "name": "ucsc-comm-genesis-child",
+  "version": "1.0.0",
+  "description": "Npm for Communications",
+  "main": "index.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@wordpress/scripts": "^22.5.0",
+    "install-peers": "^1.0.3",
+    "prettier": "^2.6.2",
+    "standard-version": "^9.3.2",
+    "typescript": "^4.6.4"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucsc/ucsc-comm-genesis-child.git"
+  },
+  "keywords": [
+    "wordpress",
+    "genesis",
+    "childtheme"
+  ],
+  "author": "UC Santa Cruz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ucsc/ucsc-comm-genesis-child/issues"
+  },
+  "homepage": "https://github.com/ucsc/ucsc-comm-genesis-child#readme"
 }
