@@ -34,7 +34,7 @@ function bb_modify_jquery()
     }
 }
 
-add_action('wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets');
+add_action('wp_enqueue_scripts', __NAMESPACE__ . '\enqueue_assets' );
 /**
  * Enqueue Scripts and Styles.
  *
@@ -49,28 +49,14 @@ function enqueue_assets()
     //wp_enqueue_style( CHILD_TEXT_DOMAIN . '-roboto-condensed', '//fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700', array(), CHILD_THEME_VERSION );
     wp_enqueue_style('dashicons');
 
+    //Styles
+    wp_enqueue_style(CHILD_TEXT_DOMAIN .'-ucsc-c-and-m-styles', get_stylesheet_directory_uri() . '/build/style-index.css', null , CHILD_THEME_VERSION );
+
     //Merged
-    wp_enqueue_script(CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/assets/js/merged.js', array( 'jquery' ), CHILD_THEME_VERSION, true);
-    
-    // Back To Top
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-back-to-top', CHILD_URL . '/assets/js/blackbird-back-to-top.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
- 
-    // Sticky Reveal
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-reveal', CHILD_URL . '/assets/js/sticky-reveal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
- 
-    // Sticky Side
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-sticky-side', CHILD_URL . '/assets/js/sticky-side.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
- 
-    // Home Page Scroll
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-home-page-scroll', CHILD_URL . '/assets/js/home-page-scroll-to-here.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-    
+    wp_enqueue_script( CHILD_TEXT_DOMAIN .'-merged', CHILD_URL . '/build/theme.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
+        
     // FontAwesome
     wp_enqueue_script('font-awesome', 'https://use.fontawesome.com/64d0d03cae.js',  null, true);
-
-    // // Bootstrap components js
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-collapse', CHILD_URL . '/assets/js/collapse.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-dropdown', CHILD_URL . '/assets/js/dropdown.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
-    // wp_enqueue_script( CHILD_TEXT_DOMAIN .'-bootstrap-modal', CHILD_URL . '/assets/js/modal.js', array( 'jquery' ), CHILD_THEME_VERSION, true );
 
     $localized_script_args = array(
     'mainMenu' => __('Menu', CHILD_TEXT_DOMAIN),
