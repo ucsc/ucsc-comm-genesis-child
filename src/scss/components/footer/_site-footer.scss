@@ -57,7 +57,7 @@
         font-weight: 700;
         margin-bottom: 3px;
         @include media-query($breakpoint__screen-size--smaller) {
-            @include font-size(13.6px);
+            @include font-size(13.6);
         }
     }
     .copyright {
@@ -65,10 +65,10 @@
         margin-bottom: 0;
         font-weight: 400;
         @include media-query($breakpoint__screen-size--medium) {
-            @include font-size(12px);
+            @include font-size(12);
         }
         @include media-query($breakpoint__screen-size--smaller) {
-            @include font-size(10px);
+            @include font-size(10);
         }
     }
     @include media-query($breakpoint__screen-size--small) {
@@ -119,10 +119,10 @@
         @include font-size($footer-copyright--font-size);
         
         @include media-query($breakpoint__screen-size--medium) {
-            @include font-size(12px);
+            @include font-size(12);
         }
         @include media-query($breakpoint__screen-size--smaller) {
-            @include font-size(10px);
+            @include font-size(10);
         }
     }
 }
